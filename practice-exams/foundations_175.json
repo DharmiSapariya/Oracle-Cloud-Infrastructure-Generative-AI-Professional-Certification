@@ -1,0 +1,2102 @@
+[
+ {
+  "id": 1,
+  "section": "AI, ML, DL Foundations",
+  "question": "What is the correct hierarchical relationship between AI, ML, and DL?",
+  "options": {
+   "A": "DL ⊃ ML ⊃ AI",
+   "B": "AI ⊃ DL ⊃ ML",
+   "C": "AI ⊃ ML ⊃ DL",
+   "D": "ML ⊃ AI ⊃ DL"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 2,
+  "section": "AI, ML, DL Foundations",
+  "question": "A system that can mimic any human sensory, motor, and cognitive ability across any task without human intervention is best described as:",
+  "options": {
+   "A": "Narrow AI",
+   "B": "Artificial General Intelligence (AGI)",
+   "C": "Generative AI",
+   "D": "Reinforcement Learning"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 3,
+  "section": "AI, ML, DL Foundations",
+  "question": "Which of the following is an example of a routine business task that AI commonly automates?",
+  "options": {
+   "A": "Composing an original symphony",
+   "B": "Approving a credit card application",
+   "C": "Designing a new logo",
+   "D": "Writing humor"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 4,
+  "section": "AI, ML, DL Foundations",
+  "question": "What is the fundamental difference between how traditional ML and Deep Learning handle feature extraction?",
+  "options": {
+   "A": "ML requires manual feature specification; DL automatically extracts features",
+   "B": "DL requires manual feature specification; ML automatically extracts features",
+   "C": "Both require manual feature engineering",
+   "D": "Neither requires features"
+  },
+  "answer": "A"
+ },
+ {
+  "id": 5,
+  "section": "AI, ML, DL Foundations",
+  "question": "Why can deep learning algorithms process very large datasets quickly?",
+  "options": {
+   "A": "They use fewer parameters than ML models",
+   "B": "They split data into batches and use parallel computation (often via GPUs)",
+   "C": "They skip the training phase",
+   "D": "They only work with small datasets"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 6,
+  "section": "AI, ML, DL Foundations",
+  "question": "Which of these is NOT one of the three primary types of machine learning?",
+  "options": {
+   "A": "Supervised learning",
+   "B": "Unsupervised learning",
+   "C": "Reinforcement learning",
+   "D": "Transductive learning"
+  },
+  "answer": "D"
+ },
+ {
+  "id": 7,
+  "section": "AI, ML, DL Foundations",
+  "question": "In machine learning terminology, \"inference\" refers to:",
+  "options": {
+   "A": "Collecting and labeling training data",
+   "B": "Adjusting a neural network's weights during training",
+   "C": "Using a trained model to generate a prediction on new, unseen data",
+   "D": "Splitting data into training and test sets"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 8,
+  "section": "AI, ML, DL Foundations",
+  "question": "A model that performs very well on training data but poorly on unseen test data is suffering from:",
+  "options": {
+   "A": "Underfitting",
+   "B": "Vanishing gradients",
+   "C": "Overfitting",
+   "D": "Normalization error"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 9,
+  "section": "AI, ML, DL Foundations",
+  "question": "Which scenario is an example of supervised learning?",
+  "options": {
+   "A": "Grouping customers by purchasing behavior with no predefined categories",
+   "B": "Training a spam filter using emails labeled \"spam\" or \"not spam\"",
+   "C": "Training a robotic arm via trial-and-error rewards",
+   "D": "Reducing the dimensionality of a dataset"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 10,
+  "section": "AI, ML, DL Foundations",
+  "question": "Which of these is a real-world application of unsupervised learning?",
+  "options": {
+   "A": "Disease detection from labeled patient records",
+   "B": "Weather forecasting",
+   "C": "Customer segmentation",
+   "D": "Spam detection"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 11,
+  "section": "AI, ML, DL Foundations",
+  "question": "What is a \"training example\" (or tuple) in a supervised learning dataset?",
+  "options": {
+   "A": "A single row containing one input-output pair",
+   "B": "The entire dataset",
+   "C": "Only the output label",
+   "D": "A cluster of similar data points"
+  },
+  "answer": "A"
+ },
+ {
+  "id": 12,
+  "section": "AI, ML, DL Foundations",
+  "question": "In the linear regression equation f(x) = w·x + b, what does \"b\" represent?",
+  "options": {
+   "A": "The number of training examples",
+   "B": "The bias / y-intercept",
+   "C": "The loss function",
+   "D": "The learning rate"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 13,
+  "section": "AI, ML, DL Foundations",
+  "question": "What does \"loss\" measure in a regression model?",
+  "options": {
+   "A": "The number of features used",
+   "B": "The penalty for a bad/incorrect prediction",
+   "C": "The size of the training dataset",
+   "D": "The number of layers in the model"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 14,
+  "section": "AI, ML, DL Foundations",
+  "question": "Which technique is used when the output variable is continuous (e.g., predicting a price)?",
+  "options": {
+   "A": "Classification",
+   "B": "Clustering",
+   "C": "Regression",
+   "D": "Reinforcement learning"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 15,
+  "section": "AI, ML, DL Foundations",
+  "question": "Logistic regression differs from linear regression primarily because it:",
+  "options": {
+   "A": "Cannot be used for binary outcomes",
+   "B": "Uses a sigmoid function to output probabilities between 0 and 1",
+   "C": "Requires unlabeled data",
+   "D": "Only works with images"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 16,
+  "section": "AI, ML, DL Foundations",
+  "question": "Which non-parametric supervised learning algorithm makes predictions based on the proximity of data points?",
+  "options": {
+   "A": "Linear Regression",
+   "B": "K-Nearest Neighbors (KNN)",
+   "C": "Logistic Regression",
+   "D": "Random Forest"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 17,
+  "section": "AI, ML, DL Foundations",
+  "question": "What role does the \"random_state\" parameter play in train_test_split?",
+  "options": {
+   "A": "It determines the model's accuracy",
+   "B": "It controls randomness to make the data split reproducible",
+   "C": "It scales the features",
+   "D": "It selects which features to use"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 18,
+  "section": "AI, ML, DL Foundations",
+  "question": "Why is feature standardization (mean=0, std=1) important before training some ML models?",
+  "options": {
+   "A": "It removes the need for a test set",
+   "B": "It prevents large-magnitude features from unfairly dominating the learning process",
+   "C": "It converts categorical data into text",
+   "D": "It eliminates the need for labels"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 19,
+  "section": "AI, ML, DL Foundations",
+  "question": "The accuracy_score metric calculates:",
+  "options": {
+   "A": "The average value of all features",
+   "B": "The ratio of correctly predicted instances to total instances",
+   "C": "The number of hidden layers in a model",
+   "D": "The learning rate of the algorithm"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 20,
+  "section": "AI, ML, DL Foundations",
+  "question": "What does the \"target variable\" represent in supervised learning?",
+  "options": {
+   "A": "The input features used for prediction",
+   "B": "The desired output or class label the model is trying to predict",
+   "C": "A metric used only for feature selection",
+   "D": "The method used to split the dataset"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 21,
+  "section": "Unsupervised & Reinforcement Learning",
+  "question": "In clustering, data points that don't belong to any cluster are called:",
+  "options": {
+   "A": "Centroids",
+   "B": "Outliers",
+   "C": "Labels",
+   "D": "Vectors"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 22,
+  "section": "Unsupervised & Reinforcement Learning",
+  "question": "Which similarity metric is commonly used in clustering and ranges between 0 and 1, where values closer to 1 indicate higher similarity?",
+  "options": {
+   "A": "Loss function",
+   "B": "Cosine similarity",
+   "C": "Learning rate",
+   "D": "Bias term"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 23,
+  "section": "Unsupervised & Reinforcement Learning",
+  "question": "Which of the following is NOT a common similarity metric used in clustering?",
+  "options": {
+   "A": "Euclidean distance",
+   "B": "Manhattan distance",
+   "C": "Jaccard similarity",
+   "D": "Backpropagation distance"
+  },
+  "answer": "D"
+ },
+ {
+  "id": 24,
+  "section": "Unsupervised & Reinforcement Learning",
+  "question": "Which is NOT a category of clustering algorithms discussed in the course?",
+  "options": {
+   "A": "Partition-based",
+   "B": "Hierarchical-based",
+   "C": "Density-based",
+   "D": "Gradient-based"
+  },
+  "answer": "D"
+ },
+ {
+  "id": 25,
+  "section": "Unsupervised & Reinforcement Learning",
+  "question": "Why is evaluating clustering results considered more challenging than evaluating supervised models?",
+  "options": {
+   "A": "Clustering algorithms don't use similarity metrics",
+   "B": "There is no labeled ground truth to verify results against",
+   "C": "Clustering only works with images",
+   "D": "Clustering models cannot be retrained"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 26,
+  "section": "Unsupervised & Reinforcement Learning",
+  "question": "In reinforcement learning, the entity that takes actions and learns from feedback is called the:",
+  "options": {
+   "A": "Environment",
+   "B": "Policy",
+   "C": "Agent",
+   "D": "State"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 27,
+  "section": "Unsupervised & Reinforcement Learning",
+  "question": "What is a \"policy\" in reinforcement learning?",
+  "options": {
+   "A": "The reward signal given after each action",
+   "B": "The strategy/mapping the agent uses to decide which action to take in a given state",
+   "C": "The external system the agent interacts with",
+   "D": "The dataset used for training"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 28,
+  "section": "Unsupervised & Reinforcement Learning",
+  "question": "What is the goal of a reinforcement learning algorithm?",
+  "options": {
+   "A": "To minimize the number of states",
+   "B": "To find the optimal policy that yields the most cumulative reward",
+   "C": "To label all training data correctly",
+   "D": "To reduce the number of parameters"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 29,
+  "section": "Unsupervised & Reinforcement Learning",
+  "question": "Which algorithms are commonly used to learn an optimal policy in reinforcement learning?",
+  "options": {
+   "A": "Linear Regression and KNN",
+   "B": "Q-learning and Deep Q-learning",
+   "C": "K-means and DBSCAN",
+   "D": "CNN and RNN"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 30,
+  "section": "Unsupervised & Reinforcement Learning",
+  "question": "A streaming service wants to recommend TV shows based on user viewing behavior with no predefined categories. Which ML approach fits best?",
+  "options": {
+   "A": "Supervised Learning",
+   "B": "Reinforcement Learning",
+   "C": "Unsupervised Learning",
+   "D": "Rule-based Engine"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 31,
+  "section": "Unsupervised & Reinforcement Learning",
+  "question": "In the robotic arm warehouse example, what defines the \"state\"?",
+  "options": {
+   "A": "The reward given for correct placement",
+   "B": "Information like arm position, item positions, and target location positions",
+   "C": "The set of all possible actions",
+   "D": "The training dataset used"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 32,
+  "section": "Unsupervised & Reinforcement Learning",
+  "question": "Reinforcement learning is best suited for which of the following applications?",
+  "options": {
+   "A": "Email spam classification",
+   "B": "Autonomous vehicle navigation",
+   "C": "Product image classification",
+   "D": "Text sentiment analysis"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 33,
+  "section": "Unsupervised & Reinforcement Learning",
+  "question": "What differentiates a \"many-to-many\" RNN architecture from a \"many-to-one\" architecture?",
+  "options": {
+   "A": "Many-to-many produces multiple outputs for multiple inputs; many-to-one produces a single output for multiple inputs",
+   "B": "Many-to-many is used only for images",
+   "C": "Many-to-one requires no training",
+   "D": "There is no meaningful difference"
+  },
+  "answer": "A"
+ },
+ {
+  "id": 34,
+  "section": "Unsupervised & Reinforcement Learning",
+  "question": "Which RNN architecture type is best suited for sentiment analysis of a review?",
+  "options": {
+   "A": "One-to-one",
+   "B": "One-to-many",
+   "C": "Many-to-one",
+   "D": "Many-to-many"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 35,
+  "section": "Unsupervised & Reinforcement Learning",
+  "question": "In market segmentation via clustering, which of the following inputs would most likely be used?",
+  "options": {
+   "A": "Labeled purchase fraud/non-fraud outcomes",
+   "B": "Household size, income, location, occupation",
+   "C": "Reward signals from an environment",
+   "D": "Token embeddings from an LLM"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 36,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "What is the primary purpose of the hidden layer(s) in an artificial neural network?",
+  "options": {
+   "A": "To receive raw input only, without computation",
+   "B": "To process and transform inputs using the network's weights and activation functions",
+   "C": "To produce the final classification output exclusively",
+   "D": "To store the training dataset"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 37,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "Which of the following is a mandatory layer in an ANN?",
+  "options": {
+   "A": "Hidden layer",
+   "B": "Dropout layer",
+   "C": "Input layer",
+   "D": "Convolutional layer"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 38,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "In an ANN, what determines whether a neuron \"fires\"?",
+  "options": {
+   "A": "The number of layers in the network",
+   "B": "Whether the weighted sum of inputs crosses a specified threshold",
+   "C": "The size of the training dataset",
+   "D": "The learning rate alone"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 39,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "What algorithm is used to adjust neural network weights based on prediction error during training?",
+  "options": {
+   "A": "Gradient boosting",
+   "B": "Backpropagation",
+   "C": "Clustering",
+   "D": "Tokenization"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 40,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "Which neural network architecture is best suited for recognizing faces in images?",
+  "options": {
+   "A": "Feedforward Neural Network (FNN)",
+   "B": "Autoencoder",
+   "C": "Convolutional Neural Network (CNN)",
+   "D": "Recurrent Neural Network (RNN)"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 41,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "Why does a CNN work better than a standard ANN for image data?",
+  "options": {
+   "A": "CNNs require labeled data while ANNs do not",
+   "B": "CNNs process 2D data natively instead of flattening images into 1D arrays",
+   "C": "CNNs cannot detect edges or textures",
+   "D": "CNNs do not require an input layer"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 42,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "In CNN architecture, which layer applies small filters (kernels) that slide across the image to detect features like edges and textures?",
+  "options": {
+   "A": "Pooling layer",
+   "B": "Convolutional layer",
+   "C": "Dropout layer",
+   "D": "Softmax layer"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 43,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "What is the role of the pooling layer in a CNN?",
+  "options": {
+   "A": "It assigns the final class label",
+   "B": "It reduces the spatial dimensions of feature maps",
+   "C": "It converts probabilities into class predictions",
+   "D": "It prevents overfitting by randomly removing neurons"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 44,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "Which CNN layer is a regularization technique used to prevent overfitting?",
+  "options": {
+   "A": "Convolutional layer",
+   "B": "Softmax layer",
+   "C": "Dropout layer",
+   "D": "Pooling layer"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 45,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "The Softmax layer in a CNN is primarily responsible for:",
+  "options": {
+   "A": "Extracting edges from an image",
+   "B": "Converting the final layer's output into probability scores for each class",
+   "C": "Reducing computational complexity",
+   "D": "Preventing vanishing gradients"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 46,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "Which of the following is a known limitation of CNNs?",
+  "options": {
+   "A": "They cannot process image data at all",
+   "B": "They are considered \"black box\" models, making them difficult to interpret",
+   "C": "They require no training data",
+   "D": "They cannot be used for medical imaging"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 47,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "Which deep learning architecture is specifically designed to handle sequential data such as time series or natural language?",
+  "options": {
+   "A": "CNN",
+   "B": "RNN",
+   "C": "GAN",
+   "D": "Autoencoder"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 48,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "What key feature allows an RNN to capture dependencies across time steps?",
+  "options": {
+   "A": "Convolutional filters",
+   "B": "A hidden state (memory) updated at each time step",
+   "C": "Bounding boxes",
+   "D": "Dropout layers"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 49,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "What is the primary limitation of RNNs when processing long sequences?",
+  "options": {
+   "A": "RNNs can only understand words at the start of a sentence",
+   "B": "RNNs can only process numerical, not text, data",
+   "C": "RNNs struggle with long-range dependencies due to the vanishing gradient problem",
+   "D": "RNNs process words in parallel, making them inefficient"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 50,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "How does LSTM address the vanishing gradient problem found in standard RNNs?",
+  "options": {
+   "A": "By removing the hidden state entirely",
+   "B": "By using gating mechanisms (input, forget, output gates) to selectively remember/forget information",
+   "C": "By processing all words simultaneously",
+   "D": "By eliminating the need for backpropagation"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 51,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "In an LSTM, which gate determines what existing information should be discarded from the memory cell?",
+  "options": {
+   "A": "Input gate",
+   "B": "Output gate",
+   "C": "Forget gate",
+   "D": "Attention gate"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 52,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "Which deep learning model architecture is best suited for generating realistic synthetic images?",
+  "options": {
+   "A": "RNN",
+   "B": "LSTM",
+   "C": "Generative Adversarial Network (GAN)",
+   "D": "Feedforward Neural Network"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 53,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "Autoencoders are primarily used for:",
+  "options": {
+   "A": "Text translation",
+   "B": "Feature extraction, dimensionality reduction, and anomaly detection",
+   "C": "Object detection with bounding boxes",
+   "D": "Sentiment classification"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 54,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "You are building software to help complete lines of poetry by suggesting the next word. Which model architecture is best suited?",
+  "options": {
+   "A": "Convolutional Neural Network (CNN)",
+   "B": "Generative Adversarial Network (GAN)",
+   "C": "Recurrent Neural Network (RNN)",
+   "D": "Variational Autoencoder (VAE)"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 55,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "You are training a model to generate original music compositions. Which architecture is most appropriate?",
+  "options": {
+   "A": "Feedforward Neural Network (FNN)",
+   "B": "Convolutional Neural Network (CNN)",
+   "C": "Recurrent Neural Network (RNN)",
+   "D": "Autoencoder only"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 56,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "What type of data is most likely to be used with deep learning algorithms, as opposed to simpler ML models?",
+  "options": {
+   "A": "Only string data",
+   "B": "Data with simple, human-interpretable features",
+   "C": "Complex data with non-human-interpretable features (e.g., raw pixels)",
+   "D": "Only tabular/relational data"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 57,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "In the handwritten digit recognition ANN example (28x28 pixel images), how many neurons are typically in the output layer?",
+  "options": {
+   "A": "28",
+   "B": "16",
+   "C": "10",
+   "D": "784"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 58,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "What happens during backpropagation when an ANN predicts the wrong digit (e.g., predicts \"6\" instead of \"2\")?",
+  "options": {
+   "A": "The training data is discarded",
+   "B": "The connection weights are adjusted based on the calculated error",
+   "C": "The number of hidden layers is increased automatically",
+   "D": "The model stops training permanently"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 59,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "Why do deep learning algorithms benefit significantly from GPUs?",
+  "options": {
+   "A": "GPUs store more training labels than CPUs",
+   "B": "GPUs perform many parallel calculations efficiently, ideal for the matrix operations in DL",
+   "C": "GPUs eliminate the need for training data",
+   "D": "GPUs are cheaper to manufacture than CPUs"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 60,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "Which of the following is a multimodal generative AI application?",
+  "options": {
+   "A": "A model that only translates text",
+   "B": "A model that processes and generates across text, image, audio, and video simultaneously",
+   "C": "A model that only performs sentiment analysis",
+   "D": "A model that only classifies emails"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 61,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "In the make_circles classifier demo, increasing the number of neurons in the hidden layer of the MLP classifier generally results in:",
+  "options": {
+   "A": "A simpler, less accurate decision boundary",
+   "B": "A more complex and more accurate decision boundary",
+   "C": "No change in the decision boundary",
+   "D": "The classifier failing to run"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 62,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "What activation function was used in the MLPClassifier demo to help create non-linear decision boundaries?",
+  "options": {
+   "A": "Softmax",
+   "B": "Sigmoid",
+   "C": "ReLU",
+   "D": "Tanh only"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 63,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "What was the key historical development in deep learning during the 1980s?",
+  "options": {
+   "A": "Introduction of GPUs",
+   "B": "Introduction of backpropagation for training",
+   "C": "Introduction of transformers",
+   "D": "Introduction of CNNs"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 64,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "Around what year did GPUs become cheap and widely available, fueling widespread DL adoption?",
+  "options": {
+   "A": "1990",
+   "B": "2000",
+   "C": "2010",
+   "D": "2020"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 65,
+  "section": "Deep Learning & Neural Network Architectures",
+  "question": "AlexNet and Deep-Q-Network, two major deep learning breakthroughs, were introduced around which year?",
+  "options": {
+   "A": "1998",
+   "B": "2005",
+   "C": "2012",
+   "D": "2018"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 66,
+  "section": "Generative AI & Large Language Models",
+  "question": "Generative AI is best described as a subset of:",
+  "options": {
+   "A": "Supervised learning only",
+   "B": "Deep learning",
+   "C": "Reinforcement learning",
+   "D": "Rule-based systems"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 67,
+  "section": "Generative AI & Large Language Models",
+  "question": "What is the key distinction between how traditional ML models and generative AI models are typically pre-trained?",
+  "options": {
+   "A": "Traditional ML models require no data; GenAI models require huge labeled datasets",
+   "B": "Traditional ML uses labeled data (features + labels); GenAI is pre-trained on unstructured, unlabeled content",
+   "C": "GenAI models cannot be trained on text data",
+   "D": "There is no difference"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 68,
+  "section": "Generative AI & Large Language Models",
+  "question": "A language model computes:",
+  "options": {
+   "A": "The exact next word with 100% certainty",
+   "B": "A probability distribution over its vocabulary for the next likely word",
+   "C": "Only grammatical correctness of a sentence",
+   "D": "The number of parameters needed for training"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 69,
+  "section": "Generative AI & Large Language Models",
+  "question": "What does the \"large\" in \"Large Language Model\" primarily refer to?",
+  "options": {
+   "A": "The physical size of the training servers",
+   "B": "The number of parameters in the model",
+   "C": "The number of GPUs used at inference time",
+   "D": "The number of programming languages supported"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 70,
+  "section": "Generative AI & Large Language Models",
+  "question": "What special token indicates that an LLM should stop generating further text?",
+  "options": {
+   "A": "BOS (Beginning of Sequence)",
+   "B": "EOS (End of Sequence)",
+   "C": "PAD",
+   "D": "UNK"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 71,
+  "section": "Generative AI & Large Language Models",
+  "question": "Which deep learning architecture underlies modern LLMs?",
+  "options": {
+   "A": "CNN",
+   "B": "Transformer",
+   "C": "Autoencoder only",
+   "D": "GAN"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 72,
+  "section": "Generative AI & Large Language Models",
+  "question": "Why can transformers understand relationships between distant words better than RNNs?",
+  "options": {
+   "A": "They process sequences one word at a time like RNNs",
+   "B": "They use self-attention to consider all words in a sentence simultaneously",
+   "C": "They ignore word order entirely",
+   "D": "They only use convolutional filters"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 73,
+  "section": "Generative AI & Large Language Models",
+  "question": "What paper introduced the transformer architecture?",
+  "options": {
+   "A": "\"Deep Residual Learning\"",
+   "B": "\"Attention Is All You Need\"",
+   "C": "\"ImageNet Classification with Deep CNNs\"",
+   "D": "\"Playing Atari with Deep Reinforcement Learning\""
+  },
+  "answer": "B"
+ },
+ {
+  "id": 74,
+  "section": "Generative AI & Large Language Models",
+  "question": "In a transformer, what are the two main submodules?",
+  "options": {
+   "A": "Generator and Discriminator",
+   "B": "Encoder and Decoder",
+   "C": "Actor and Critic",
+   "D": "Filter and Pooler"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 75,
+  "section": "Generative AI & Large Language Models",
+  "question": "What is a \"token\" in the context of LLMs?",
+  "options": {
+   "A": "A parameter in the neural network",
+   "B": "An individual unit (word, part of word, or punctuation) into which text is divided for processing",
+   "C": "The confidence score of a prediction",
+   "D": "The memory size of the model"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 76,
+  "section": "Generative AI & Large Language Models",
+  "question": "Roughly how many tokens does the word \"friendship\" typically break into?",
+  "options": {
+   "A": "1",
+   "B": "2",
+   "C": "4",
+   "D": "0"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 77,
+  "section": "Generative AI & Large Language Models",
+  "question": "What is an embedding in the context of LLMs?",
+  "options": {
+   "A": "A hyperparameter used during training",
+   "B": "A numerical (vector) representation of text capturing semantic meaning",
+   "C": "A method of removing punctuation",
+   "D": "A type of loss function"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 78,
+  "section": "Generative AI & Large Language Models",
+  "question": "Encoder-only transformer models are best suited for:",
+  "options": {
+   "A": "Generating long-form articles",
+   "B": "Converting input into vector representations for tasks like semantic search",
+   "C": "Speech-to-text conversion",
+   "D": "Image classification"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 79,
+  "section": "Generative AI & Large Language Models",
+  "question": "Decoder-only transformer models are best suited for:",
+  "options": {
+   "A": "Semantic search",
+   "B": "Text/sequence generation, one token at a time",
+   "C": "Vector database indexing",
+   "D": "Clustering"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 80,
+  "section": "Generative AI & Large Language Models",
+  "question": "Encoder-decoder transformer models are ideal for which type of task?",
+  "options": {
+   "A": "Image classification",
+   "B": "Clustering",
+   "C": "Sequence-to-sequence tasks like machine translation",
+   "D": "Anomaly detection"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 81,
+  "section": "Generative AI & Large Language Models",
+  "question": "What is the primary purpose of \"instruction tuning\" for an LLM?",
+  "options": {
+   "A": "To increase the number of model parameters",
+   "B": "To train the model to follow user instructions rather than just complete text",
+   "C": "To reduce the vocabulary size",
+   "D": "To eliminate the need for tokenization"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 82,
+  "section": "Generative AI & Large Language Models",
+  "question": "RLHF (Reinforcement Learning from Human Feedback) is primarily used to:",
+  "options": {
+   "A": "Reduce the number of tokens in a prompt",
+   "B": "Align model behavior with human preferences using a reward model trained on human feedback",
+   "C": "Convert an encoder-only model to a decoder-only model",
+   "D": "Automatically translate text"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 83,
+  "section": "Generative AI & Large Language Models",
+  "question": "What does \"few-shot prompting\" involve?",
+  "options": {
+   "A": "Providing zero examples and relying purely on the model's pretraining",
+   "B": "Explicitly providing several examples of the intended task within the prompt",
+   "C": "Fine-tuning the model on a labeled dataset",
+   "D": "Removing the system prompt entirely"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 84,
+  "section": "Generative AI & Large Language Models",
+  "question": "Chain-of-thought prompting improves LLM performance on complex tasks primarily by:",
+  "options": {
+   "A": "Reducing the number of tokens used",
+   "B": "Prompting the model to break the problem into intermediate reasoning steps before the final answer",
+   "C": "Increasing model parameter count",
+   "D": "Removing ambiguous words from the prompt"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 85,
+  "section": "Generative AI & Large Language Models",
+  "question": "What is \"hallucination\" in the context of LLMs?",
+  "options": {
+   "A": "A visual artifact produced by GANs",
+   "B": "Model-generated text that is non-factual or ungrounded in training data",
+   "C": "A training technique to reduce bias",
+   "D": "An error that only occurs with encoder-only models"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 86,
+  "section": "Generative AI & Large Language Models",
+  "question": "Which technique has been shown to reduce hallucination compared to 0-shot prompting?",
+  "options": {
+   "A": "Increasing model temperature",
+   "B": "Retrieval-augmented generation (grounding answers in retrieved documents)",
+   "C": "Reducing the vocabulary size",
+   "D": "Removing the EOS token"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 87,
+  "section": "Generative AI & Large Language Models",
+  "question": "What is the primary function of the \"temperature\" parameter when interacting with an LLM?",
+  "options": {
+   "A": "It controls the randomness/creativity of the output",
+   "B": "It sets the maximum number of tokens",
+   "C": "It defines which language the model responds in",
+   "D": "It selects which foundational model is used"
+  },
+  "answer": "A"
+ },
+ {
+  "id": 88,
+  "section": "Generative AI & Large Language Models",
+  "question": "What does a \"preamble override\" do in the context of OCI Generative AI chat models?",
+  "options": {
+   "A": "Fine-tunes the underlying model permanently",
+   "B": "Changes the model's overall behavior/tone via an initial guideline message, without fine-tuning",
+   "C": "Deletes the chat history",
+   "D": "Increases the model's parameter count"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 89,
+  "section": "Generative AI & Large Language Models",
+  "question": "Which of these best explains why LLMs \"don't know\" about a company's private/internal data by default?",
+  "options": {
+   "A": "LLMs are incapable of processing structured data",
+   "B": "LLMs are pretrained primarily on large public text corpora, not private enterprise data",
+   "C": "LLMs are only trained on numerical data",
+   "D": "LLMs require SQL databases to function at all"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 90,
+  "section": "Generative AI & Large Language Models",
+  "question": "Which statement best describes the primary difference between LLMs and traditional ML models?",
+  "options": {
+   "A": "LLMs have a limited number of parameters compared to ML models",
+   "B": "LLMs are pretrained on a large text corpus, whereas traditional ML models are typically trained on custom, task-specific data",
+   "C": "LLMs require extensive manual feature engineering while ML models do not",
+   "D": "Traditional ML models are generally better at generating natural language than LLMs"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 91,
+  "section": "Customizing LLMs — Prompting, RAG",
+  "question": "Which LLM customization method has the lowest cost and fastest iteration speed, but relies on the model already understanding the relevant topic?",
+  "options": {
+   "A": "Fine-tuning",
+   "B": "Retrieval-Augmented Generation (RAG)",
+   "C": "Prompt engineering",
+   "D": "Pretraining from scratch"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 92,
+  "section": "Customizing LLMs — Prompting, RAG",
+  "question": "When should you choose RAG over prompt engineering alone?",
+  "options": {
+   "A": "When your data changes rapidly and you want to ground answers to reduce hallucination",
+   "B": "When you have no access to any enterprise data source",
+   "C": "When you want to permanently alter the model's weights",
+   "D": "When token limits are not a concern"
+  },
+  "answer": "A"
+ },
+ {
+  "id": 93,
+  "section": "Customizing LLMs — Prompting, RAG",
+  "question": "What are the two major components of a RAG system?",
+  "options": {
+   "A": "Encoder and pooling",
+   "B": "Retrieval and augmented generation",
+   "C": "Fine-tuning and quantization",
+   "D": "Tokenization and normalization"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 94,
+  "section": "Customizing LLMs — Prompting, RAG",
+  "question": "What is a key disadvantage of RAG systems?",
+  "options": {
+   "A": "They always require model fine-tuning",
+   "B": "They require a compatible, high-quality data source and are more complex to set up",
+   "C": "They cannot access the latest data",
+   "D": "They eliminate the need for embeddings"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 95,
+  "section": "Customizing LLMs — Prompting, RAG",
+  "question": "What is the primary goal of fine-tuning an LLM?",
+  "options": {
+   "A": "To convert the model into a different neural network architecture",
+   "B": "To train the model completely from scratch",
+   "C": "To adjust a pretrained model's parameters using a smaller, task-specific dataset to improve performance on specific tasks",
+   "D": "To decrease the model's parameter count for speed only"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 96,
+  "section": "Customizing LLMs — Prompting, RAG",
+  "question": "Which statement correctly explains why T-Few fine-tuning reduces cost and training time compared to traditional fine-tuning?",
+  "options": {
+   "A": "It trains the entire model from scratch for each task",
+   "B": "It requires manually configuring every layer of the model",
+   "C": "It selectively updates only a fraction of the model's weights",
+   "D": "It disallows any customization of pretrained models"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 97,
+  "section": "Customizing LLMs — Prompting, RAG",
+  "question": "Fine-tuning is most appropriate when:",
+  "options": {
+   "A": "The LLM already performs the task well",
+   "B": "The pretrained model doesn't perform the task well, or you want to teach it a new skill/domain/style",
+   "C": "You only need the model for a single one-off query",
+   "D": "You want to avoid using any labeled data"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 98,
+  "section": "Customizing LLMs — Prompting, RAG",
+  "question": "What is a major disadvantage of fine-tuning compared to prompt engineering?",
+  "options": {
+   "A": "It cannot improve model performance",
+   "B": "It requires a labeled dataset, which can be expensive and time-consuming",
+   "C": "It cannot be combined with RAG",
+   "D": "It is always faster than prompt engineering"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 99,
+  "section": "Customizing LLMs — Prompting, RAG",
+  "question": "In the LLM customization framework, \"context optimization\" refers to:",
+  "options": {
+   "A": "Adapting the LLM's internal weights for a domain",
+   "B": "Providing more specific and detailed information for the LLM to draw from",
+   "C": "Reducing the number of tokens in a prompt",
+   "D": "Selecting a smaller foundational model"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 100,
+  "section": "Customizing LLMs — Prompting, RAG",
+  "question": "In the LLM customization framework, \"LLM optimization\" refers to:",
+  "options": {
+   "A": "Increasing context window size only",
+   "B": "Adapting the LLM itself to accomplish specific tasks or work within a given domain (e.g., fine-tuning)",
+   "C": "Removing the need for a vector database",
+   "D": "Reducing hallucination through better prompts only"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 101,
+  "section": "Customizing LLMs — Prompting, RAG",
+  "question": "Which of the following best describes a typical iterative LLM customization journey?",
+  "options": {
+   "A": "Only fine-tuning is ever used; prompting and RAG are obsolete",
+   "B": "Start with prompt engineering and few-shot examples, then add RAG if more context is needed, then fine-tune if output style/format still isn't right",
+   "C": "Always fine-tune first before ever trying prompting",
+   "D": "RAG replaces the need for an evaluation framework"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 102,
+  "section": "Customizing LLMs — Prompting, RAG",
+  "question": "Why does RAG NOT require fine-tuning?",
+  "options": {
+   "A": "Because it modifies the model architecture directly",
+   "B": "Because it retrieves relevant information at inference time and augments the prompt, without changing model weights",
+   "C": "Because RAG only works with unlabeled data",
+   "D": "Because RAG uses reinforcement learning instead"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 103,
+  "section": "Customizing LLMs — Prompting, RAG",
+  "question": "Which technique involves providing explicit input/output examples in a prompt to guide an LLM's response?",
+  "options": {
+   "A": "Zero-shot learning",
+   "B": "Few-shot prompting",
+   "C": "Self-supervised learning",
+   "D": "RLHF"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 104,
+  "section": "Customizing LLMs — Prompting, RAG",
+  "question": "A completion LLM (not instruction-tuned) given the prompt \"Four score and seven years ago\" would most likely:",
+  "options": {
+   "A": "Refuse to respond",
+   "B": "Answer a factual question about the prompt",
+   "C": "Continue/complete the text based on patterns seen during training",
+   "D": "Automatically translate the text"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 105,
+  "section": "Customizing LLMs — Prompting, RAG",
+  "question": "Why is groundedness important in a chatbot RAG use case (e.g., checking a return policy)?",
+  "options": {
+   "A": "It ensures the chatbot's response is supported by retrieved enterprise documents rather than fabricated",
+   "B": "It reduces the number of tokens processed",
+   "C": "It removes the need for a vector database",
+   "D": "It guarantees the model has zero parameters"
+  },
+  "answer": "A"
+ },
+ {
+  "id": 106,
+  "section": "OCI AI Services — Language, Speech, Vision",
+  "question": "How many languages does OCI Language support for language detection?",
+  "options": {
+   "A": "14",
+   "B": "29",
+   "C": "75",
+   "D": "100"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 107,
+  "section": "OCI AI Services — Language, Speech, Vision",
+  "question": "How many entity types can OCI Language identify?",
+  "options": {
+   "A": "5",
+   "B": "14",
+   "C": "29",
+   "D": "75"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 108,
+  "section": "OCI AI Services — Language, Speech, Vision",
+  "question": "How many categories/subcategories does OCI Language use for text classification?",
+  "options": {
+   "A": "75",
+   "B": "100",
+   "C": "600",
+   "D": "14"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 109,
+  "section": "OCI AI Services — Language, Speech, Vision",
+  "question": "John works at a news aggregation platform and wants to automatically categorize articles into topics like \"Politics,\" \"Technology,\" and \"Sports.\" Which OCI Language feature should he use?",
+  "options": {
+   "A": "Language detection",
+   "B": "Sentiment analysis",
+   "C": "Named entity recognition",
+   "D": "Text classification"
+  },
+  "answer": "D"
+ },
+ {
+  "id": 110,
+  "section": "OCI AI Services — Language, Speech, Vision",
+  "question": "A restaurant review states \"the food was great, but the service sucked.\" Which OCI Language capability would correctly identify different sentiments for \"food\" and \"service\" separately?",
+  "options": {
+   "A": "Document-level sentiment",
+   "B": "Aspect-based sentiment analysis",
+   "C": "Sentence-level sentiment",
+   "D": "Key phrase extraction"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 111,
+  "section": "OCI AI Services — Language, Speech, Vision",
+  "question": "Which OCI Language capability identifies the most important ideas or subjects in a body of text?",
+  "options": {
+   "A": "Entity recognition",
+   "B": "Key phrase extraction",
+   "C": "PII detection",
+   "D": "Text classification"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 112,
+  "section": "OCI AI Services — Language, Speech, Vision",
+  "question": "Which languages are currently supported by OCI Speech (per the course)?",
+  "options": {
+   "A": "English, French, German",
+   "B": "English, Spanish, Portuguese",
+   "C": "English only",
+   "D": "English, Mandarin, Hindi"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 113,
+  "section": "OCI AI Services — Language, Speech, Vision",
+  "question": "How does OCI Speech achieve fast transcription of hours of audio in under 10 minutes?",
+  "options": {
+   "A": "By skipping less important audio segments",
+   "B": "By chunking audio into smaller segments, transcribing each, and rejoining them",
+   "C": "By using only text-based input",
+   "D": "By reducing audio quality before transcription"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 114,
+  "section": "OCI AI Services — Language, Speech, Vision",
+  "question": "John needs to analyze the accuracy of OCI Speech transcriptions for a legal case and evaluate how confident the model is about each word. Which feature should he use?",
+  "options": {
+   "A": "Batch support",
+   "B": "Confidence scoring",
+   "C": "Profanity filtering",
+   "D": "Normalization"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 115,
+  "section": "OCI AI Services — Language, Speech, Vision",
+  "question": "What does \"normalization\" mean in the context of OCI Speech transcription output?",
+  "options": {
+   "A": "Translating the transcript into multiple languages",
+   "B": "Converting elements like numbers, dates, and URLs into standard, readable formats",
+   "C": "Removing all punctuation",
+   "D": "Converting uppercase letters to lowercase"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 116,
+  "section": "OCI AI Services — Language, Speech, Vision",
+  "question": "Which profanity filtering mode replaces a word with asterisks but retains its first letter?",
+  "options": {
+   "A": "Removing",
+   "B": "Masking",
+   "C": "Tagging",
+   "D": "Filtering"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 117,
+  "section": "OCI AI Services — Language, Speech, Vision",
+  "question": "Emma needs to add closed captions to company videos for accessibility. Which OCI Speech feature should she use?",
+  "options": {
+   "A": "Confidence scoring",
+   "B": "Batching support",
+   "C": "SRT file support",
+   "D": "Profanity filtering"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 118,
+  "section": "OCI AI Services — Language, Speech, Vision",
+  "question": "Lisa runs a parking lot security system using cameras and needs to locate and label vehicles and license plates in each frame. Which OCI Vision feature should she use?",
+  "options": {
+   "A": "Image classification",
+   "B": "Object detection",
+   "C": "Speech-to-text",
+   "D": "Document classification"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 119,
+  "section": "OCI AI Services — Language, Speech, Vision",
+  "question": "What does OCI Vision's Image Classification feature do?",
+  "options": {
+   "A": "Draws bounding boxes around individual objects",
+   "B": "Assigns classification labels to an image based on major features/scene elements",
+   "C": "Extracts key-value pairs from receipts",
+   "D": "Converts speech to text"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 120,
+  "section": "OCI AI Services — Language, Speech, Vision",
+  "question": "Which OCI Vision Document AI feature is useful for identifying whether a document is an invoice, receipt, or resume based on its appearance and keywords?",
+  "options": {
+   "A": "OCR",
+   "B": "Table extraction",
+   "C": "Document classification",
+   "D": "Key-value extraction"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 121,
+  "section": "OCI AI Services — Language, Speech, Vision",
+  "question": "How many common fields does OCI Document Understanding's key-value extraction typically look for in receipts?",
+  "options": {
+   "A": "5",
+   "B": "13",
+   "C": "25",
+   "D": "75"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 122,
+  "section": "OCI AI Services — Language, Speech, Vision",
+  "question": "Which OCI Document Understanding feature determines document language based on visual features of the text rather than the text content itself?",
+  "options": {
+   "A": "Table extraction",
+   "B": "Language detection",
+   "C": "Key-value extraction",
+   "D": "Document classification"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 123,
+  "section": "OCI AI Services — Language, Speech, Vision",
+  "question": "OCI Document Understanding can classify documents into how many different types based on visual appearance and keywords?",
+  "options": {
+   "A": "5",
+   "B": "10",
+   "C": "14",
+   "D": "20"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 124,
+  "section": "OCI AI Services — Language, Speech, Vision",
+  "question": "Which OCI Vision feature is capable of detecting text directly within an image scene, such as a license plate or a sign?",
+  "options": {
+   "A": "Image classification",
+   "B": "Object detection (with text extraction)",
+   "C": "Document classification",
+   "D": "Key-value extraction only"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 125,
+  "section": "OCI AI Services — Language, Speech, Vision",
+  "question": "In the OCI Vision demo, why was the model unable to detect the microwave transmission antennas on a rooftop, despite detecting the person on the roof?",
+  "options": {
+   "A": "The image resolution was too high",
+   "B": "The pretrained model was not trained to recognize that object type; a custom model would be needed",
+   "C": "Object detection cannot detect small objects",
+   "D": "The antennas were outside the image boundaries"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 126,
+  "section": "OCI AI Services — Language, Speech, Vision",
+  "question": "What is Oracle Digital Assistant primarily used for?",
+  "options": {
+   "A": "Extracting tabular data from documents",
+   "B": "Creating AI-driven conversational interfaces that route users to appropriate \"skills\"",
+   "C": "Converting audio files to text",
+   "D": "Performing vector similarity search"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 127,
+  "section": "OCI AI Services — Language, Speech, Vision",
+  "question": "Which access method for OCI AI Services requires the most programming expertise?",
+  "options": {
+   "A": "OCI Console",
+   "B": "REST API",
+   "C": "Command Line Interface",
+   "D": "All require equal expertise"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 128,
+  "section": "OCI AI Services — Language, Speech, Vision",
+  "question": "OCI AI Services are best described as:",
+  "options": {
+   "A": "Requiring customers to manage their own GPU infrastructure",
+   "B": "A collection of prebuilt ML models, consumable via API, with no infrastructure to manage",
+   "C": "Only usable after extensive custom model training",
+   "D": "Limited to text-based tasks only"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 129,
+  "section": "OCI AI Services — Language, Speech, Vision",
+  "question": "In OCI Vision's object detection demo of cyclists, how did the system indicate that a detected person was riding a bicycle?",
+  "options": {
+   "A": "By color-coding the person red",
+   "B": "By nesting the bounding boxes for the person and bicycle together",
+   "C": "By displaying a text label only, with no bounding box",
+   "D": "It could not identify this relationship"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 130,
+  "section": "OCI AI Services — Language, Speech, Vision",
+  "question": "Which OCI service would you use to extract raw text, key-value pairs, and tabular data from a scanned invoice?",
+  "options": {
+   "A": "OCI Speech",
+   "B": "OCI Language",
+   "C": "OCI Vision / Document Understanding",
+   "D": "OCI Digital Assistant"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 131,
+  "section": "OCI Data Science & AI Infrastructure",
+  "question": "John has trained a machine learning model using OCI and needs to deploy it for real-time predictions on user inputs. Which OCI service should he use?",
+  "options": {
+   "A": "OCI Speech",
+   "B": "OCI Language",
+   "C": "OCI Data Science",
+   "D": "OCI Object Storage"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 132,
+  "section": "OCI Data Science & AI Infrastructure",
+  "question": "What are the three core principles of OCI Data Science?",
+  "options": {
+   "A": "Fast, cheap, scalable",
+   "B": "Accelerated, collaborative, enterprise-grade",
+   "C": "Serverless, multilingual, open-source",
+   "D": "Secure, lawful, ethical"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 133,
+  "section": "OCI Data Science & AI Infrastructure",
+  "question": "In OCI Data Science, what is a \"Project\"?",
+  "options": {
+   "A": "A single trained model file",
+   "B": "A container/collaborative workspace organizing notebook sessions and models for a data science team",
+   "C": "A GPU cluster used for fine-tuning",
+   "D": "A REST API endpoint"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 134,
+  "section": "OCI Data Science & AI Infrastructure",
+  "question": "What is the purpose of a Conda environment in OCI Data Science notebook sessions?",
+  "options": {
+   "A": "To store trained models permanently",
+   "B": "To manage and install Python packages/libraries and their dependencies",
+   "C": "To provide GPU compute directly",
+   "D": "To handle user authentication"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 135,
+  "section": "OCI Data Science & AI Infrastructure",
+  "question": "What does the Accelerated Data Science (ADS) SDK's .prepare() method do?",
+  "options": {
+   "A": "Deploys the model to a REST endpoint immediately",
+   "B": "Generates the required model artifacts needed for deployment automatically",
+   "C": "Loads the dataset from Object Storage",
+   "D": "Trains the model from scratch"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 136,
+  "section": "OCI Data Science & AI Infrastructure",
+  "question": "What is the correct order of the ADS model deployment workflow steps?",
+  "options": {
+   "A": "Deploy → Verify → Save → Predict → Initiate",
+   "B": "Initiate → Prepare → Verify → Save → Deploy → Predict",
+   "C": "Predict → Prepare → Deploy → Initiate",
+   "D": "Save → Initiate → Predict → Verify"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 137,
+  "section": "OCI Data Science & AI Infrastructure",
+  "question": "What is the purpose of the .verify() method in the ADS model workflow?",
+  "options": {
+   "A": "It permanently deploys the model to production",
+   "B": "It simulates model deployment, allowing testing/debugging without an actual deployment",
+   "C": "It deletes the trained model",
+   "D": "It converts the model into a different framework"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 138,
+  "section": "OCI Data Science & AI Infrastructure",
+  "question": "Which OCI Data Science feature allows models to be deployed as HTTP/REST API endpoints for real-time predictions?",
+  "options": {
+   "A": "Model Catalog",
+   "B": "Model Deployment",
+   "C": "Conda Environment",
+   "D": "Jobs"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 139,
+  "section": "OCI Data Science & AI Infrastructure",
+  "question": "What technology allows GPUs to communicate directly with each other while bypassing the CPU, enabling low-latency, high-bandwidth communication?",
+  "options": {
+   "A": "RoCE only",
+   "B": "RDMA (Remote Direct Memory Access)",
+   "C": "VECTOR_DISTANCE",
+   "D": "T-Few fine-tuning"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 140,
+  "section": "OCI Data Science & AI Infrastructure",
+  "question": "In an OCI RDMA Supercluster, what is the approximate worst-case round-trip latency across the entire supercluster (multiple blocks)?",
+  "options": {
+   "A": "1 microsecond",
+   "B": "6.5 microseconds",
+   "C": "20 microseconds",
+   "D": "200 microseconds"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 141,
+  "section": "OCI Data Science & AI Infrastructure",
+  "question": "Why does OCI use \"network locality hints\" for large-scale GPU workloads spanning multiple blocks?",
+  "options": {
+   "A": "To force all traffic through a single GPU",
+   "B": "To help customers build topology that keeps most traffic local, minimizing latency and reducing flow collisions",
+   "C": "To disable RDMA entirely",
+   "D": "To increase worst-case latency intentionally"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 142,
+  "section": "OCI Data Science & AI Infrastructure",
+  "question": "You need a GPU suited for massive-scale HPC AI training and inference workloads at the highest current performance tier discussed in the course. Which would you choose?",
+  "options": {
+   "A": "A10",
+   "B": "A100",
+   "C": "H100",
+   "D": "GB200"
+  },
+  "answer": "D"
+ },
+ {
+  "id": 143,
+  "section": "OCI Data Science & AI Infrastructure",
+  "question": "Which NVIDIA architecture introduced a dedicated transformer engine optimized specifically for transformer model performance?",
+  "options": {
+   "A": "Ampere (A100)",
+   "B": "Hopper (H100)",
+   "C": "Blackwell",
+   "D": "Grace CPU only"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 144,
+  "section": "OCI Data Science & AI Infrastructure",
+  "question": "Which of these is NOT a component of OCI AI Infrastructure as discussed in the course?",
+  "options": {
+   "A": "NVIDIA GPUs",
+   "B": "RDMA Network",
+   "C": "OCI Vault",
+   "D": "OCI Storage"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 145,
+  "section": "OCI Data Science & AI Infrastructure",
+  "question": "What does OCI Data Science's \"AI Quick Actions\" feature enable?",
+  "options": {
+   "A": "Only manual GPU provisioning",
+   "B": "Directly deploying popular LLMs to GPU-powered instances, and fine-tuning/deploying custom models",
+   "C": "Deleting Object Storage buckets automatically",
+   "D": "Creating VECTOR datatype columns"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 146,
+  "section": "OCI Generative AI Service, Database 23ai",
+  "question": "What are the three main characteristics of the OCI Generative AI Service?",
+  "options": {
+   "A": "Pretrained foundational models, flexible fine-tuning, dedicated AI clusters",
+   "B": "Language detection, sentiment analysis, key phrase extraction",
+   "C": "Object detection, image classification, OCR",
+   "D": "RDMA, GPUs, RoCE"
+  },
+  "answer": "A"
+ },
+ {
+  "id": 147,
+  "section": "OCI Generative AI Service, Database 23ai",
+  "question": "Which two families of pretrained foundational models does OCI Generative AI Service offer?",
+  "options": {
+   "A": "Google and OpenAI",
+   "B": "Meta and Cohere",
+   "C": "Anthropic and Microsoft",
+   "D": "NVIDIA and Meta"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 148,
+  "section": "OCI Generative AI Service, Database 23ai",
+  "question": "What is the maximum prompt size (in tokens) for the Command-R-Plus model as discussed in the course?",
+  "options": {
+   "A": "8,000",
+   "B": "16,000",
+   "C": "128,000",
+   "D": "1 million"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 149,
+  "section": "OCI Generative AI Service, Database 23ai",
+  "question": "Which type of foundational model in OCI Generative AI Service is primarily used for semantic search?",
+  "options": {
+   "A": "Chat models",
+   "B": "Embedding models",
+   "C": "Fine-tuned models only",
+   "D": "Digital Assistant skills"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 150,
+  "section": "OCI Generative AI Service, Database 23ai",
+  "question": "What does OCI's multilingual embedding model enable that the English-only model does not?",
+  "options": {
+   "A": "Faster inference speed",
+   "B": "Searching across 100+ languages, including cross-language search",
+   "C": "Larger context windows",
+   "D": "Automatic profanity filtering"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 151,
+  "section": "OCI Generative AI Service, Database 23ai",
+  "question": "In OCI Generative AI Service, what is a Dedicated AI Cluster?",
+  "options": {
+   "A": "A shared GPU pool available to all customers simultaneously",
+   "B": "Isolated GPU-based compute resources with exclusive RDMA networking for a customer's fine-tuning/inference workloads",
+   "C": "A CPU-only compute cluster",
+   "D": "A vector database index"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 152,
+  "section": "OCI Generative AI Service, Database 23ai",
+  "question": "How does Oracle Database 23ai allow the use of pretrained AI models for vector generation?",
+  "options": {
+   "A": "By restricting models to only Oracle-provided APIs",
+   "B": "By manually converting AI models into SQL queries",
+   "C": "By storing only raw image files for direct comparison",
+   "D": "By loading ONNX models directly into the database"
+  },
+  "answer": "D"
+ },
+ {
+  "id": 153,
+  "section": "OCI Generative AI Service, Database 23ai",
+  "question": "What SQL datatype was introduced in Oracle Database 23ai to store vector embeddings?",
+  "options": {
+   "A": "BLOB",
+   "B": "VECTOR",
+   "C": "JSON",
+   "D": "CLOB"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 154,
+  "section": "OCI Generative AI Service, Database 23ai",
+  "question": "Which function in Oracle Database 23ai determines the similarity between two vectors?",
+  "options": {
+   "A": "VECTOR_EMBEDDING",
+   "B": "VECTOR_DISTANCE",
+   "C": "DBMS_CLOUD_AI",
+   "D": "SELECT AI"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 155,
+  "section": "OCI Generative AI Service, Database 23ai",
+  "question": "What is the default distance metric used by VECTOR_DISTANCE unless otherwise specified?",
+  "options": {
+   "A": "Manhattan",
+   "B": "Euclidean",
+   "C": "Cosine",
+   "D": "Jaccard"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 156,
+  "section": "OCI Generative AI Service, Database 23ai",
+  "question": "What is the purpose of the APPROXIMATE keyword in a vector search FETCH clause?",
+  "options": {
+   "A": "It forces an exact search every time",
+   "B": "It indicates a similarity search using a Vector Index for faster (approximate) results",
+   "C": "It disables vector indexes",
+   "D": "It converts vectors into JSON"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 157,
+  "section": "OCI Generative AI Service, Database 23ai",
+  "question": "If a Vector Index's TARGET ACCURACY is set to 80% and you fetch the top 5 results, what would you expect?",
+  "options": {
+   "A": "Exactly 5 out of 5 correct matches always",
+   "B": "Approximately 4 out of 5 correct matches",
+   "C": "80 total results returned",
+   "D": "No results returned"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 158,
+  "section": "OCI Generative AI Service, Database 23ai",
+  "question": "What key differentiator does Oracle Database 23ai offer for AI Vector Search compared to single-purpose vector databases?",
+  "options": {
+   "A": "It only supports vector data, nothing else",
+   "B": "It supports similarity search combined with joins across relational, JSON, spatial, and other data types in a single converged database",
+   "C": "It cannot perform similarity searches at all",
+   "D": "It requires a separate database for vectors"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 159,
+  "section": "OCI Generative AI Service, Database 23ai",
+  "question": "Which third-party frameworks does Oracle Database 23ai integrate with for building GenAI applications?",
+  "options": {
+   "A": "TensorFlow and PyTorch only",
+   "B": "LangChain and LlamaIndex",
+   "C": "React and Angular",
+   "D": "Kubernetes and Docker"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 160,
+  "section": "OCI Generative AI Service, Database 23ai",
+  "question": "What is Select AI in Oracle Autonomous Database primarily used for?",
+  "options": {
+   "A": "Automatically generating images from text prompts",
+   "B": "Allowing users to query data using natural language, which is translated into SQL",
+   "C": "Replacing the need for any database administrator",
+   "D": "Fine-tuning LLMs directly within SQL Developer"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 161,
+  "section": "OCI Generative AI Service, Database 23ai",
+  "question": "How does Select AI generate SQL queries from natural language questions?",
+  "options": {
+   "A": "It only works with predefined SQL command templates",
+   "B": "It connects to an LLM, infers the query intent, and formulates the SQL command",
+   "C": "It requires users to manually input query parameters",
+   "D": "It requires structured datasets with predefined SQL commands only"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 162,
+  "section": "OCI Generative AI Service, Database 23ai",
+  "question": "What SQL command reveals the actual SQL query generated by Select AI without executing it for a result set?",
+  "options": {
+   "A": "SELECT AI EXPLAIN",
+   "B": "SELECT AI SHOWSQL",
+   "C": "SELECT AI DEBUG",
+   "D": "SELECT AI TRANSLATE"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 163,
+  "section": "OCI Generative AI Service, Database 23ai",
+  "question": "What is an \"AI Profile\" in the context of Select AI?",
+  "options": {
+   "A": "A user's login credentials",
+   "B": "A configuration specifying the LLM provider/model and which schemas/tables/views to include in processing",
+   "C": "A GPU cluster allocation",
+   "D": "A vector index type"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 164,
+  "section": "OCI Generative AI Service, Database 23ai",
+  "question": "Which PL/SQL package is used to configure Select AI's AI Profiles?",
+  "options": {
+   "A": "DBMS_VECTOR",
+   "B": "DBMS_CLOUD_AI",
+   "C": "DBMS_SELECT_AI",
+   "D": "DBMS_LLM"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 165,
+  "section": "OCI Generative AI Service, Database 23ai",
+  "question": "How does using Select AI with OCI Generative AI (versus an external LLM provider) benefit data security?",
+  "options": {
+   "A": "It has no effect on data security",
+   "B": "Data stays within the customer's tenancy and is not sent to or seen by other customers/external providers",
+   "C": "It requires data to be sent to a third-party for processing",
+   "D": "It disables encryption for faster processing"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 166,
+  "section": "Responsible AI",
+  "question": "Which of these summarizes the three guiding principles for AI to be trustworthy?",
+  "options": {
+   "A": "AI should be fast, unbiased, and autonomous",
+   "B": "AI should be lawful, ethical, and robust",
+   "C": "AI should be cost-effective, cloud-based, and user-friendly",
+   "D": "AI should replace human oversight, be independent, and highly scalable"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 167,
+  "section": "Responsible AI",
+  "question": "What does \"robust\" mean in the context of trustworthy AI?",
+  "options": {
+   "A": "AI complies with all data privacy laws",
+   "B": "AI systems are technically and socially sound, minimizing unintentional harm even with good intentions",
+   "C": "AI systems must run on the fastest possible hardware",
+   "D": "AI must be open source"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 168,
+  "section": "Responsible AI",
+  "question": "Which of the following is NOT one of the three main AI ethics principles discussed?",
+  "options": {
+   "A": "AI should help humans and allow for oversight",
+   "B": "AI should never cause physical or social harm",
+   "C": "AI decisions should be transparent, fair, and explainable",
+   "D": "AI should operate with zero human involvement for maximum efficiency"
+  },
+  "answer": "D"
+ },
+ {
+  "id": 169,
+  "section": "Responsible AI",
+  "question": "In healthcare AI applications, what is a key challenge related to fairness?",
+  "options": {
+   "A": "AI systems always perform equally well regardless of training data composition",
+   "B": "AI systems are only as good as their training data; biased/unrepresentative data leads to biased performance across groups",
+   "C": "Fairness is not a concern in healthcare AI",
+   "D": "AI systems cannot be evaluated for fairness"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 170,
+  "section": "Responsible AI",
+  "question": "What is a typical first step in implementing responsible AI within an organization?",
+  "options": {
+   "A": "Deploying the model to production immediately",
+   "B": "Putting governance in place",
+   "C": "Skipping policy development to save time",
+   "D": "Removing all human oversight roles"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 171,
+  "section": "Responsible AI",
+  "question": "Which roles are typically involved in the responsible AI implementation cycle?",
+  "options": {
+   "A": "Only developers",
+   "B": "Developers, deployers, and end users",
+   "C": "Only end users",
+   "D": "Only company executives"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 172,
+  "section": "Responsible AI",
+  "question": "Why is explainability important in AI decision-making, according to responsible AI principles?",
+  "options": {
+   "A": "It has no practical importance",
+   "B": "It helps those directly and indirectly affected understand and trust AI-driven decisions",
+   "C": "It only matters for image-based AI systems",
+   "D": "It is required only for reinforcement learning systems"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 173,
+  "section": "Responsible AI",
+  "question": "What does \"equality\" mean in the context of AI ethics, as discussed in the course?",
+  "options": {
+   "A": "All AI models must have the same number of parameters",
+   "B": "AI system operations must not generate unfairly biased outputs, and citizens' rights must be protected",
+   "C": "All users must have identical access to compute resources",
+   "D": "AI systems must be free to use for everyone"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 174,
+  "section": "Responsible AI",
+  "question": "Why must AI systems be regularly evaluated after deployment, according to responsible AI practices?",
+  "options": {
+   "A": "To increase the number of parameters over time",
+   "B": "To ensure they continue performing as intended and are not causing unintended harm",
+   "C": "To reduce the need for governance",
+   "D": "Regular evaluation is not necessary once deployed"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 175,
+  "section": "Responsible AI",
+  "question": "Which fundamental right does \"freedom of the individual\" protect in the context of responsible AI?",
+  "options": {
+   "A": "The right to unlimited AI compute resources",
+   "B": "Freedom of expression and the right to privacy/private life",
+   "C": "The right to bypass all AI regulations",
+   "D": "The right to modify any AI model's weights"
+  },
+  "answer": "B"
+ }
+]

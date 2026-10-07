@@ -1,0 +1,11 @@
+OCI AI Foundations course overview (sample corpus for the RAG labs)
+
+The course has seven modules. Modules 1 to 4 cover the AI stack. Module 1 is about artificial intelligence, Module 2 is about machine learning, Module 3 is about deep learning, and Module 4 is about Generative AI and large language models. Modules 5 to 7 cover the Oracle AI stack: Module 5 is an overview of the Oracle AI stack, Module 6 covers the OCI Generative AI services, and Module 7 covers the Oracle AI services.
+
+Artificial intelligence is the ability of machines to imitate human intelligence. Machine learning is a subset of AI in which algorithms learn from past data to predict outcomes or identify trends. Deep learning is a subset of machine learning in which algorithms learn from complex data using neural networks. Generative AI is a type of AI that creates new content such as text, images, audio and code.
+
+The certification exam for the AI Foundations Associate is multiple choice. It lasts one hour and contains forty questions. The exam is available in MyLearn at no cost and can be attempted several times.
+
+The OCI Generative AI service is a fully managed, serverless service that provides customizable large language models through a single API. Dedicated AI clusters host fine-tuning and inference workloads on GPUs that are isolated from other customers. T-Few is the parameter-efficient fine-tuning method that updates only a small fraction of the model weights.
+
+Retrieval-augmented generation, or RAG, retrieves relevant chunks from a knowledge base and passes them to a large language model together with the user's question. RAG reduces hallucination because the answer is grounded in retrieved documents, and it lets a system use fresh or private data without retraining the model.

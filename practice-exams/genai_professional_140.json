@@ -1,0 +1,1682 @@
+[
+ {
+  "id": 1,
+  "section": "LLM Fundamentals — Architectures",
+  "question": "What are the two major LLM architectures discussed as being built on top of the transformer?",
+  "options": {
+   "A": "CNN and RNN",
+   "B": "Encoders and Decoders",
+   "C": "GANs and VAEs",
+   "D": "Agents and Tools"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 2,
+  "section": "LLM Fundamentals — Architectures",
+  "question": "Encoders are primarily designed to:",
+  "options": {
+   "A": "Generate long-form text one token at a time",
+   "B": "Produce embeddings (vector representations) of text",
+   "C": "Perform reinforcement learning",
+   "D": "Translate directly without any vectors"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 3,
+  "section": "LLM Fundamentals — Architectures",
+  "question": "What paper popularized the transformer architecture, and in what year?",
+  "options": {
+   "A": "\"Deep Residual Learning,\" 2015",
+   "B": "\"Attention Is All You Need,\" 2017",
+   "C": "\"BERT: Pre-training of Deep Bidirectional Transformers,\" 2018",
+   "D": "\"GPT-3: Language Models are Few-Shot Learners,\" 2020"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 4,
+  "section": "LLM Fundamentals — Architectures",
+  "question": "On the model taxonomy chart discussed in the course, why do decoder models tend to be much larger than encoder models?",
+  "options": {
+   "A": "Encoders technically cannot be made large",
+   "B": "Largely historical reasons — small models tend to be poor text generators, while large encoders were shown unnecessary",
+   "C": "Decoders require less training data",
+   "D": "Encoders are always deprecated in favor of decoders"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 5,
+  "section": "LLM Fundamentals — Architectures",
+  "question": "In a BERT-style encoder model, what does passing the text \"They sent me a\" through the model produce?",
+  "options": {
+   "A": "Only a single vector for the whole sentence",
+   "B": "A vector for each word AND a vector for the entire sentence",
+   "C": "The next most likely word only",
+   "D": "A classification label only"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 6,
+  "section": "LLM Fundamentals — Architectures",
+  "question": "A decoder model, at each step, produces:",
+  "options": {
+   "A": "An entire paragraph at once",
+   "B": "Only one token at a time",
+   "C": "A vector embedding",
+   "D": "A translation into another language"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 7,
+  "section": "LLM Fundamentals — Architectures",
+  "question": "Which decoder-based models were mentioned as examples in the course?",
+  "options": {
+   "A": "BERT, RoBERTa",
+   "B": "Cohere Command, GPT-4, Llama",
+   "C": "VAE, GAN",
+   "D": "T5, BART"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 8,
+  "section": "LLM Fundamentals — Architectures",
+  "question": "Encoder-decoder models are primarily used for:",
+  "options": {
+   "A": "Embedding-only tasks like semantic search",
+   "B": "Sequence-to-sequence tasks like translation",
+   "C": "Reinforcement learning tasks",
+   "D": "Image classification"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 9,
+  "section": "LLM Fundamentals — Architectures",
+  "question": "In an encoder-decoder translation example, what is the \"self-referential loop\" in the decoder referring to?",
+  "options": {
+   "A": "The encoder re-reading its own input repeatedly",
+   "B": "Each generated token being fed back into the decoder (with the rest of the input) to generate the next word",
+   "C": "The decoder ignoring previously generated tokens",
+   "D": "A loop that only happens during pretraining"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 10,
+  "section": "LLM Fundamentals — Architectures",
+  "question": "Why would you typically NOT use a decoder model for embedding tasks?",
+  "options": {
+   "A": "Decoders cannot process text at all",
+   "B": "Encoders are purpose-built and preferred for producing embeddings",
+   "C": "Decoders are too fast for embedding tasks",
+   "D": "Embeddings are only possible with encoder-decoder models"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 11,
+  "section": "LLM Fundamentals — Architectures",
+  "question": "What is the key takeaway regarding the \"yes/no\" model-task mapping table discussed in the course?",
+  "options": {
+   "A": "A model type absolutely cannot be used outside its typical task",
+   "B": "Any model could in theory attempt any task, but certain pairings aren't traditionally used/appropriate in practice",
+   "C": "Encoders can never generate text under any circumstance",
+   "D": "The table is purely theoretical and never applies in practice"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 12,
+  "section": "LLM Fundamentals — Architectures",
+  "question": "What is the fundamental thing a language model computes, given a sequence of text?",
+  "options": {
+   "A": "A single guaranteed correct next word",
+   "B": "A probability distribution over its vocabulary for the next word",
+   "C": "A grammar correctness score",
+   "D": "The exact number of parameters needed"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 13,
+  "section": "LLM Fundamentals — Architectures",
+  "question": "Why is the term \"large\" in \"large language model\" considered \"somewhat meaningless\" per the course?",
+  "options": {
+   "A": "All LLMs have exactly the same number of parameters",
+   "B": "There is no agreed-upon threshold for when a model becomes \"large\"",
+   "C": "\"Large\" refers only to the size of the training servers",
+   "D": "The term was banned by researchers"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 14,
+  "section": "LLM Fundamentals — Architectures",
+  "question": "According to the course, does a language model return a probability for words outside its vocabulary?",
+  "options": {
+   "A": "Yes, always",
+   "B": "No — it only returns probabilities for words within its vocabulary",
+   "C": "Only for encoder models",
+   "D": "Only during fine-tuning"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 15,
+  "section": "LLM Fundamentals — Architectures",
+  "question": "Which two mechanisms were introduced as ways to affect an LLM's distribution over vocabulary words?",
+  "options": {
+   "A": "Pretraining and inference",
+   "B": "Prompting and training",
+   "C": "Tokenization and embedding",
+   "D": "Chunking and indexing"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 16,
+  "section": "LLM Fundamentals — Architectures",
+  "question": "What historically was BERT sometimes referred to as, despite some considering it not \"large\"?",
+  "options": {
+   "A": "A diffusion model",
+   "B": "A large language model (LLM)",
+   "C": "A reinforcement learning agent",
+   "D": "A GAN"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 17,
+  "section": "LLM Fundamentals — Architectures",
+  "question": "In the \"Attention Is All You Need\" architecture, embeddings are described as capturing:",
+  "options": {
+   "A": "Only the grammar of a sentence",
+   "B": "The semantics/meaning of text in numeric form",
+   "C": "The exact character count",
+   "D": "Only punctuation patterns"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 18,
+  "section": "LLM Fundamentals — Architectures",
+  "question": "Why does vector/semantic search commonly rely on encoder models rather than decoders?",
+  "options": {
+   "A": "Because encoders produce fixed embeddings usable for similarity comparison across a corpus",
+   "B": "Because decoders cannot process any text",
+   "C": "Because encoders can generate long documents faster",
+   "D": "Because decoders require labeled data to run at all"
+  },
+  "answer": "A"
+ },
+ {
+  "id": 19,
+  "section": "LLM Fundamentals — Architectures",
+  "question": "What does it mean that encoder models \"can come in all different kinds of sizes,\" per the model taxonomy discussion?",
+  "options": {
+   "A": "Encoders are always the largest models available",
+   "B": "Size (number of trainable parameters) varies broadly, but encoders trend smaller than decoders historically",
+   "C": "Only decoders have variable sizes",
+   "D": "Encoder size is irrelevant to embedding quality"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 20,
+  "section": "LLM Fundamentals — Architectures",
+  "question": "Repeatedly invoking a decoder model to generate a full sentence is described in the course as:",
+  "options": {
+   "A": "Computationally free",
+   "B": "Computationally expensive, since it must be invoked repeatedly, one token at a time",
+   "C": "Only possible with encoder-decoder architectures",
+   "D": "Something that happens automatically without repeated invocation"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 21,
+  "section": "Prompting, Training, and Decoding",
+  "question": "What is the simplest way to alter the probability distribution an LLM computes over vocabulary words?",
+  "options": {
+   "A": "Retraining the entire model from scratch",
+   "B": "Prompting — altering the content/structure of the model's input",
+   "C": "Changing the GPU hardware",
+   "D": "Increasing the vocabulary size"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 22,
+  "section": "Prompting, Training, and Decoding",
+  "question": "What is \"in-context learning,\" despite its name?",
+  "options": {
+   "A": "A process where the model's parameters are updated in real time",
+   "B": "Conditioning the model with demonstrations in the prompt, without changing any model parameters",
+   "C": "A form of reinforcement learning",
+   "D": "A synonym for fine-tuning"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 23,
+  "section": "Prompting, Training, and Decoding",
+  "question": "What is \"k-shot prompting\"?",
+  "options": {
+   "A": "Removing all examples from a prompt",
+   "B": "Including k examples of the intended task within the prompt",
+   "C": "A method for compressing model weights",
+   "D": "A decoding strategy only"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 24,
+  "section": "Prompting, Training, and Decoding",
+  "question": "What does \"zero-shot prompting\" mean?",
+  "options": {
+   "A": "Using zero temperature during generation",
+   "B": "Providing a task description with no demonstration examples",
+   "C": "Skipping the prompt entirely",
+   "D": "Using zero GPUs for inference"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 25,
+  "section": "Prompting, Training, and Decoding",
+  "question": "Chain-of-thought prompting primarily helps a model by:",
+  "options": {
+   "A": "Reducing the number of tokens generated",
+   "B": "Prompting it to break a complex problem into small, intermediate reasoning steps",
+   "C": "Automatically fine-tuning the model",
+   "D": "Bypassing the vocabulary distribution entirely"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 26,
+  "section": "Prompting, Training, and Decoding",
+  "question": "What does \"least-to-most prompting\" do differently from standard chain-of-thought prompting?",
+  "options": {
+   "A": "It removes all reasoning steps entirely",
+   "B": "It has the model solve simpler subproblems first and use those solutions to solve harder problems incrementally",
+   "C": "It only works with encoder models",
+   "D": "It requires no examples at all"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 27,
+  "section": "Prompting, Training, and Decoding",
+  "question": "What is prompt injection?",
+  "options": {
+   "A": "A method to permanently fine-tune a model via the prompt",
+   "B": "Crafting a prompt to elicit a response not intended by the model's deployer/developer",
+   "C": "A form of quantization",
+   "D": "A required step before any model deployment"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 28,
+  "section": "Prompting, Training, and Decoding",
+  "question": "Which of these is an example of \"prompt leaking\"?",
+  "options": {
+   "A": "Asking the model to translate text",
+   "B": "Coaxing a model into revealing its developer-designed system/back-end prompt",
+   "C": "Asking the model to summarize an article",
+   "D": "Setting temperature to 0"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 29,
+  "section": "Prompting, Training, and Decoding",
+  "question": "Why is domain adaptation sometimes insufficient to achieve via prompting alone?",
+  "options": {
+   "A": "Prompting always changes model parameters directly",
+   "B": "Prompting only changes the input; it cannot fundamentally alter the model's underlying parameters/knowledge",
+   "C": "Prompting requires GPUs while training does not",
+   "D": "Domain adaptation is impossible under any method"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 30,
+  "section": "Prompting, Training, and Decoding",
+  "question": "During \"training\" (as opposed to prompting), what actually changes?",
+  "options": {
+   "A": "Nothing — training and prompting are identical",
+   "B": "The model's underlying parameters/weights",
+   "C": "Only the vocabulary size",
+   "D": "Only the tokenizer"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 31,
+  "section": "Prompting, Training, and Decoding",
+  "question": "What best describes LoRA (Low-Rank Adaptation)?",
+  "options": {
+   "A": "A method that updates all parameters of the model",
+   "B": "A method that keeps original model parameters fixed and adds new trainable parameters",
+   "C": "A decoding strategy",
+   "D": "A dataset labeling technique"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 32,
+  "section": "Prompting, Training, and Decoding",
+  "question": "What distinguishes \"soft prompting\" from regular prompting?",
+  "options": {
+   "A": "Soft prompts are learned/trained parameters added to the prompt, rather than natural language text chosen by a human",
+   "B": "Soft prompting requires no data at all",
+   "C": "Soft prompting changes the tokenizer only",
+   "D": "Soft prompting is identical to zero-shot prompting"
+  },
+  "answer": "A"
+ },
+ {
+  "id": 33,
+  "section": "Prompting, Training, and Decoding",
+  "question": "What is \"continual pretraining\"?",
+  "options": {
+   "A": "A method requiring labeled data exclusively",
+   "B": "Similar to fine-tuning (changes all parameters), but does not require labeled data — just continues training on next-word prediction",
+   "C": "A method that only changes 0.01% of weights",
+   "D": "A prompting-only technique"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 34,
+  "section": "Prompting, Training, and Decoding",
+  "question": "According to the course's cost chart, roughly how many GPUs might a 150B+ parameter model require just for generating text (inference)?",
+  "options": {
+   "A": "Always exactly 1",
+   "B": "As many as 8 or even 16, depending on precision",
+   "C": "Thousands",
+   "D": "Zero — inference requires no GPUs"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 35,
+  "section": "Prompting, Training, and Decoding",
+  "question": "What is decoding, in the technical sense used in this course?",
+  "options": {
+   "A": "Converting text into embeddings",
+   "B": "The process of generating text from an LLM's output distribution",
+   "C": "Compressing model weights",
+   "D": "A synonym for fine-tuning"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 36,
+  "section": "Prompting, Training, and Decoding",
+  "question": "In greedy decoding, which word is selected at each step?",
+  "options": {
+   "A": "A randomly sampled word",
+   "B": "The word in the vocabulary with the highest probability",
+   "C": "The word with the lowest probability",
+   "D": "A word chosen by the user manually every time"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 37,
+  "section": "Prompting, Training, and Decoding",
+  "question": "What does decreasing the temperature parameter do to the output distribution?",
+  "options": {
+   "A": "Flattens the distribution, making rare words more likely",
+   "B": "Peaks the distribution more around the highest-probability word, approaching greedy decoding",
+   "C": "Removes the EOS token entirely",
+   "D": "Has no effect on the distribution"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 38,
+  "section": "Prompting, Training, and Decoding",
+  "question": "What does increasing the temperature parameter do?",
+  "options": {
+   "A": "Always produces the exact same output as temperature 0",
+   "B": "Flattens the distribution, making rarer/lower-probability words more likely to be selected",
+   "C": "Removes randomness from generation entirely",
+   "D": "Increases the model's vocabulary size"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 39,
+  "section": "Prompting, Training, and Decoding",
+  "question": "Does changing temperature alter the relative ranking of words by probability?",
+  "options": {
+   "A": "Yes, the highest-probability word can become the lowest",
+   "B": "No — the highest-probability word always remains highest; only the magnitude/spread changes",
+   "C": "Only for encoder models",
+   "D": "Only when temperature equals exactly 1"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 40,
+  "section": "Prompting, Training, and Decoding",
+  "question": "Which decoding strategy is generally preferred for factoid question-answering?",
+  "options": {
+   "A": "High-temperature sampling",
+   "B": "Greedy decoding",
+   "C": "Nucleus sampling with very high temperature",
+   "D": "Beam search with random restarts"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 41,
+  "section": "Prompting, Training, and Decoding",
+  "question": "What does nucleus sampling add on top of basic random sampling?",
+  "options": {
+   "A": "Nothing — they are identical",
+   "B": "Additional parameters governing precisely what portion of the probability distribution can be sampled from",
+   "C": "A requirement for zero temperature",
+   "D": "Mandatory use of greedy decoding"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 42,
+  "section": "Prompting, Training, and Decoding",
+  "question": "What is beam search?",
+  "options": {
+   "A": "A method identical to greedy decoding",
+   "B": "Generating multiple candidate sequences simultaneously and pruning low-probability sequences, aiming for higher joint probability than greedy decoding",
+   "C": "A method that only works with encoder models",
+   "D": "A way to increase the vocabulary size"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 43,
+  "section": "Prompting, Training, and Decoding",
+  "question": "How is hallucination defined in the context of this course?",
+  "options": {
+   "A": "Any grammatically incorrect sentence",
+   "B": "Text generated by a model that is not grounded in any data the model was trained on or given as input",
+   "C": "A synonym for prompt injection",
+   "D": "A required output of every LLM"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 44,
+  "section": "Prompting, Training, and Decoding",
+  "question": "According to the course, can hallucination be eliminated with 100% certainty using any known method?",
+  "options": {
+   "A": "Yes, fine-tuning always eliminates it",
+   "B": "No known method eliminates hallucination with complete certainty",
+   "C": "Yes, but only with greedy decoding",
+   "D": "Yes, but only with RAG systems"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 45,
+  "section": "Prompting, Training, and Decoding",
+  "question": "What is Natural Language Inference (NLI), as used for measuring groundedness?",
+  "options": {
+   "A": "A method for translating text between languages",
+   "B": "Given a premise and a hypothesis, predicting whether the premise entails the hypothesis",
+   "C": "A tokenization algorithm",
+   "D": "A decoding strategy"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 46,
+  "section": "LLM Applications",
+  "question": "What are the two main advantages of RAG systems highlighted in the LLM applications lesson?",
+  "options": {
+   "A": "They require model retraining and increase token limits infinitely",
+   "B": "They tend to hallucinate less and provide a non-parametric mechanism for improvement",
+   "C": "They eliminate the need for any documents",
+   "D": "They only work with encoder-decoder models"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 47,
+  "section": "LLM Applications",
+  "question": "What does \"non-parametric mechanism for improvement\" mean in the context of RAG?",
+  "options": {
+   "A": "You must retrain the model's parameters to improve it",
+   "B": "You can improve the system just by adding more documents, without touching the model itself",
+   "C": "RAG systems have no parameters at all",
+   "D": "RAG only works with parametric statistical models"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 48,
+  "section": "LLM Applications",
+  "question": "According to the course, current best code models can automatically patch real bugs correctly what percentage of the time?",
+  "options": {
+   "A": "Less than 15%",
+   "B": "About 50%",
+   "C": "Over 90%",
+   "D": "100%"
+  },
+  "answer": "A"
+ },
+ {
+  "id": 49,
+  "section": "LLM Applications",
+  "question": "How do diffusion models typically generate images, in contrast to how LLMs generate text?",
+  "options": {
+   "A": "One pixel/token at a time, identically to text generation",
+   "B": "All pixels simultaneously, refining from noise to a coherent image, rather than one at a time",
+   "C": "By first generating text and converting it to an image",
+   "D": "Diffusion models cannot generate images"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 50,
+  "section": "LLM Applications",
+  "question": "Why has joint/simultaneous decoding not worked as well for text as for images?",
+  "options": {
+   "A": "Text has a fixed, always-known length like images do",
+   "B": "Text length is generally unknown in advance, and words are discrete rather than continuous like pixel values",
+   "C": "Images have no fixed size while text always does",
+   "D": "There is no difference — both work equally well"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 51,
+  "section": "LLM Applications",
+  "question": "In the ReAct framework for language agents, what are \"thoughts\"?",
+  "options": {
+   "A": "Random noise injected into the model",
+   "B": "Summaries the model emits of its goal, completed steps, and next steps",
+   "C": "A synonym for embeddings",
+   "D": "Hidden system prompts inaccessible to the model"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 52,
+  "section": "LLM Applications",
+  "question": "What does \"tool use\" refer to in the context of language agents?",
+  "options": {
+   "A": "Using only the model's internal knowledge, never external systems",
+   "B": "Teaching LLMs to use APIs/external programs (e.g., a calculator) to perform computation",
+   "C": "A method for compressing model weights",
+   "D": "A synonym for fine-tuning"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 53,
+  "section": "LLM Applications",
+  "question": "A language agent buying an ambiguously described product would typically:",
+  "options": {
+   "A": "Refuse the task immediately",
+   "B": "Take an action (e.g., search), observe the environment's response, and iterate until the goal is achieved",
+   "C": "Only work with a single fixed action, with no iteration",
+   "D": "Require full fine-tuning before completing any task"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 54,
+  "section": "LLM Applications",
+  "question": "Why is reasoning capability considered valuable for LLM-based agents in long-horizon tasks?",
+  "options": {
+   "A": "It has no impact on agent performance",
+   "B": "Reasoning-capable LLMs could act as high-level planners for complex, multi-step tasks",
+   "C": "Reasoning eliminates the need for any environment interaction",
+   "D": "Reasoning only applies to embedding models"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 55,
+  "section": "LLM Applications",
+  "question": "RAG systems are noted in the course to be useful for which of the following?",
+  "options": {
+   "A": "Only single-document summarization",
+   "B": "Multi-document question-answering, dialogue, fact-checking, and more",
+   "C": "Only image classification",
+   "D": "Only speech-to-text tasks"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 56,
+  "section": "OCI Generative AI Service — Overview &",
+  "question": "What are the three key characteristics of the OCI Generative AI Service?",
+  "options": {
+   "A": "Object storage, RDMA networking, IAM",
+   "B": "Pre-trained foundational models, flexible fine-tuning, dedicated AI clusters",
+   "C": "Chat, embedding, and clustering models only",
+   "D": "Vision, Speech, and Language APIs"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 57,
+  "section": "OCI Generative AI Service — Overview &",
+  "question": "OCI Generative AI Service sources its pre-trained foundational models from which two providers?",
+  "options": {
+   "A": "OpenAI and Anthropic",
+   "B": "Meta and Cohere",
+   "C": "Google and Microsoft",
+   "D": "NVIDIA and IBM"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 58,
+  "section": "OCI Generative AI Service — Overview &",
+  "question": "What does \"serverless\" mean in the context of OCI Generative AI Service?",
+  "options": {
+   "A": "The customer must manually provision all servers",
+   "B": "No infrastructure management is required by the customer",
+   "C": "The service only runs during specific server hours",
+   "D": "It only refers to the embedding models"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 59,
+  "section": "OCI Generative AI Service — Overview &",
+  "question": "What is the maximum user prompt size (in tokens) for Command-R-Plus, per the course?",
+  "options": {
+   "A": "4,000",
+   "B": "16,000",
+   "C": "128,000",
+   "D": "1,000,000"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 60,
+  "section": "OCI Generative AI Service — Overview &",
+  "question": "What is the maximum user prompt size for Command-R-16k?",
+  "options": {
+   "A": "128,000 tokens",
+   "B": "16,000 tokens",
+   "C": "4,000 tokens",
+   "D": "1,000 tokens"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 61,
+  "section": "OCI Generative AI Service — Overview &",
+  "question": "What differentiates Command-R-Plus from Command-R in terms of use case?",
+  "options": {
+   "A": "Command-R-Plus is cheaper but less powerful",
+   "B": "Command-R-Plus is more powerful/expensive; Command-R is more affordable for entry-level use cases",
+   "C": "They are functionally identical",
+   "D": "Command-R cannot be used for chat"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 62,
+  "section": "OCI Generative AI Service — Overview &",
+  "question": "What does \"instruction tuning\" accomplish for a base model?",
+  "options": {
+   "A": "It reduces the model's vocabulary",
+   "B": "It allows the model to better follow human language instructions",
+   "C": "It removes the need for a preamble",
+   "D": "It converts a decoder into an encoder"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 63,
+  "section": "OCI Generative AI Service — Overview &",
+  "question": "What is a \"preamble\" in OCI Generative AI chat models?",
+  "options": {
+   "A": "A required labeled dataset for fine-tuning",
+   "B": "An initial guideline message that shapes the model's overall chat behavior/tone",
+   "C": "The final output token",
+   "D": "A vector embedding of the user's query"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 64,
+  "section": "OCI Generative AI Service — Overview &",
+  "question": "Overriding the preamble to say \"answer in a pirate tone\" is an example of:",
+  "options": {
+   "A": "Fine-tuning the model",
+   "B": "Changing model behavior/style WITHOUT fine-tuning",
+   "C": "Retraining the base model permanently",
+   "D": "Creating a dedicated AI cluster"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 65,
+  "section": "OCI Generative AI Service — Overview &",
+  "question": "Which two classes of pre-trained foundational models does OCI Generative AI Service offer?",
+  "options": {
+   "A": "Vision and Speech models",
+   "B": "Chat models and Embedding models",
+   "C": "Classification and Clustering models",
+   "D": "Reinforcement learning and supervised models"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 66,
+  "section": "OCI Generative AI Service — Overview &",
+  "question": "What is the primary use case for OCI's embedding models?",
+  "options": {
+   "A": "Long-form text generation",
+   "B": "Semantic search (as opposed to keyword/lexical search)",
+   "C": "Image classification",
+   "D": "Real-time translation only"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 67,
+  "section": "OCI Generative AI Service — Overview &",
+  "question": "What capability does the multilingual embedding model provide that the English-only model does not?",
+  "options": {
+   "A": "Faster generation of chat responses",
+   "B": "Support for 100+ languages, including searching within or across languages",
+   "C": "Larger token limits for chat",
+   "D": "Built-in content moderation"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 68,
+  "section": "OCI Generative AI Service — Overview &",
+  "question": "In the OCI Playground demo, what did clicking \"View Code\" provide?",
+  "options": {
+   "A": "A downloadable model checkpoint",
+   "B": "Ready-to-use Java/Python code (API calls, variables) to integrate into an application",
+   "C": "A list of all customer prompts ever submitted",
+   "D": "A GPU utilization report"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 69,
+  "section": "OCI Generative AI Service — Overview &",
+  "question": "In the HR Help Center articles embedding demo, articles about similar topics (e.g., \"skills\") were shown to:",
+  "options": {
+   "A": "Have unrelated random vector positions",
+   "B": "Cluster together numerically, since numerically similar embeddings are semantically similar",
+   "C": "Always appear at position (0,0)",
+   "D": "Be automatically deleted from the dataset"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 70,
+  "section": "OCI Generative AI Service — Overview &",
+  "question": "What does the Cohere Embed V3 model improve upon prior versions?",
+  "options": {
+   "A": "It removes multilingual support",
+   "B": "It evaluates how well a query matches a document's topic/content quality, ranking higher-quality documents higher",
+   "C": "It eliminates the need for a vector database",
+   "D": "It reduces the vector dimensionality to 2"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 71,
+  "section": "OCI Generative AI Service — Overview &",
+  "question": "What is the vector dimensionality produced by OCI's standard Embed English/Multilingual models?",
+  "options": {
+   "A": "128",
+   "B": "384",
+   "C": "1,024",
+   "D": "4,096"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 72,
+  "section": "OCI Generative AI Service — Overview &",
+  "question": "What is the vector dimensionality produced by the \"Lite\" versions of the V3 embedding models?",
+  "options": {
+   "A": "128",
+   "B": "384",
+   "C": "1,024",
+   "D": "2,048"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 73,
+  "section": "OCI Generative AI Service — Overview &",
+  "question": "What is the maximum number of tokens allowed per embedding input in OCI's embedding models?",
+  "options": {
+   "A": "128",
+   "B": "512",
+   "C": "1,024",
+   "D": "4,096"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 74,
+  "section": "OCI Generative AI Service — Overview &",
+  "question": "What is the maximum number of inputs allowed per embedding run in OCI Generative AI Service?",
+  "options": {
+   "A": "10",
+   "B": "26",
+   "C": "96",
+   "D": "512"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 75,
+  "section": "OCI Generative AI Service — Overview &",
+  "question": "In the tokens lesson, roughly how many tokens does a complex word like \"friendship\" typically break into?",
+  "options": {
+   "A": "1",
+   "B": "2 (\"friend\" + \"ship\")",
+   "C": "4",
+   "D": "0"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 76,
+  "section": "OCI GenAI Service — Parameters, Fine-Tuning",
+  "question": "What does the \"maximum output tokens\" parameter control?",
+  "options": {
+   "A": "The maximum size of the input prompt",
+   "B": "The max number of tokens the model generates per response",
+   "C": "The number of GPUs used",
+   "D": "The embedding vector dimensionality"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 77,
+  "section": "OCI GenAI Service — Parameters, Fine-Tuning",
+  "question": "What does \"top k\" sampling do?",
+  "options": {
+   "A": "Picks the next token only from the top K highest-probability tokens, ignoring the rest",
+   "B": "Picks tokens whose cumulative probability sums to K%",
+   "C": "Penalizes tokens that have already appeared",
+   "D": "Sets the response length to exactly K tokens"
+  },
+  "answer": "A"
+ },
+ {
+  "id": 78,
+  "section": "OCI GenAI Service — Parameters, Fine-Tuning",
+  "question": "What does \"top p\" (nucleus) sampling do?",
+  "options": {
+   "A": "Picks tokens strictly by rank, ignoring probability values",
+   "B": "Selects the smallest set of top tokens whose cumulative probability adds up to P",
+   "C": "Is identical to frequency penalty",
+   "D": "Always selects exactly one token regardless of P"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 79,
+  "section": "OCI GenAI Service — Parameters, Fine-Tuning",
+  "question": "How does frequency penalty differ from presence penalty?",
+  "options": {
+   "A": "They are identical in every way",
+   "B": "Frequency penalty scales with how many times a token appeared; presence penalty applies a flat penalty regardless of frequency (as long as it appeared once)",
+   "C": "Presence penalty only applies to punctuation",
+   "D": "Frequency penalty only works with embedding models"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 80,
+  "section": "OCI GenAI Service — Parameters, Fine-Tuning",
+  "question": "What is \"T-Few\" fine-tuning?",
+  "options": {
+   "A": "A method that updates all layers of the base model",
+   "B": "A parameter-efficient fine-tuning method that inserts new layers and updates only a small fraction (~0.01%) of weights",
+   "C": "A decoding strategy, not a fine-tuning method",
+   "D": "Only usable for embedding models"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 81,
+  "section": "OCI GenAI Service — Parameters, Fine-Tuning",
+  "question": "What is the main benefit of T-Few fine-tuning compared to vanilla fine-tuning?",
+  "options": {
+   "A": "It requires more GPUs than vanilla fine-tuning",
+   "B": "It significantly reduces training time and cost by updating only a fraction of the weights",
+   "C": "It cannot be used with dedicated AI clusters",
+   "D": "It requires no training data whatsoever"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 82,
+  "section": "OCI GenAI Service — Parameters, Fine-Tuning",
+  "question": "What two training methods (PEFT approaches) are supported in OCI Generative AI Service fine-tuning configuration?",
+  "options": {
+   "A": "Vanilla and RLHF",
+   "B": "T-Few and LoRA",
+   "C": "GAN and VAE",
+   "D": "BERT and GPT"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 83,
+  "section": "OCI GenAI Service — Parameters, Fine-Tuning",
+  "question": "What format must training data be in for OCI custom model fine-tuning?",
+  "options": {
+   "A": "CSV",
+   "B": "JSONL (JSON Lines), with \"prompt\" and \"completion\" properties, UTF-8 encoded",
+   "C": "XML",
+   "D": "Plain unstructured text with no format requirements"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 84,
+  "section": "OCI GenAI Service — Parameters, Fine-Tuning",
+  "question": "What are \"dedicated AI clusters\" in OCI Generative AI Service?",
+  "options": {
+   "A": "Shared, multi-tenant CPU pools",
+   "B": "GPU-based compute resources with exclusive RDMA networking, hosting a customer's fine-tuning/inference workloads",
+   "C": "A type of embedding model",
+   "D": "A synonym for the Playground"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 85,
+  "section": "OCI GenAI Service — Parameters, Fine-Tuning",
+  "question": "What are the two types of dedicated AI cluster purposes?",
+  "options": {
+   "A": "Vision clusters and Speech clusters",
+   "B": "Fine-tuning clusters and Hosting clusters",
+   "C": "Embedding clusters and Chat clusters",
+   "D": "Public clusters and Private clusters"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 86,
+  "section": "OCI GenAI Service — Parameters, Fine-Tuning",
+  "question": "How many custom model endpoints can a single hosting cluster support when using T-Few fine-tuned models (per the course)?",
+  "options": {
+   "A": "1",
+   "B": "10",
+   "C": "Up to 50",
+   "D": "Unlimited, with no cap"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 87,
+  "section": "OCI GenAI Service — Parameters, Fine-Tuning",
+  "question": "Why can OCI host a base model + many T-Few fine-tuned variants on the same GPUs with minimal overhead?",
+  "options": {
+   "A": "Because each fine-tuned model requires its own dedicated GPU",
+   "B": "Because T-Few fine-tuned models share the majority of weights with the base model (only ~0.01% differs), enabling parameter sharing",
+   "C": "Because GPU memory is unlimited",
+   "D": "Because vanilla fine-tuning is used exclusively"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 88,
+  "section": "OCI GenAI Service — Parameters, Fine-Tuning",
+  "question": "What is the minimum commitment (in unit-hours) for a hosting cluster, since it must run for a full month?",
+  "options": {
+   "A": "1 unit-hour",
+   "B": "24 unit-hours",
+   "C": "744 unit-hours",
+   "D": "8,760 unit-hours"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 89,
+  "section": "OCI GenAI Service — Parameters, Fine-Tuning",
+  "question": "What is the minimum billing commitment for a fine-tuning cluster job?",
+  "options": {
+   "A": "744 unit-hours (full month)",
+   "B": "1 unit-hour minimum, billed in full-hour increments",
+   "C": "30 minutes",
+   "D": "No minimum — billed by the second"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 90,
+  "section": "OCI GenAI Service — Parameters, Fine-Tuning",
+  "question": "Which cluster unit type is used for Meta Llama models (fine-tuning and hosting)?",
+  "options": {
+   "A": "Small Cohere Dedicated",
+   "B": "Large Cohere Dedicated",
+   "C": "Large Meta Dedicated",
+   "D": "Embed Cohere Dedicated"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 91,
+  "section": "OCI GenAI Service — Parameters, Fine-Tuning",
+  "question": "Which cluster unit type is used for hosting embedding models?",
+  "options": {
+   "A": "Large Cohere Dedicated",
+   "B": "Embed Cohere Dedicated",
+   "C": "Small Meta Dedicated",
+   "D": "There is no dedicated unit for embeddings"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 92,
+  "section": "OCI GenAI Service — Parameters, Fine-Tuning",
+  "question": "Do OCI embedding models support fine-tuning?",
+  "options": {
+   "A": "Yes, using T-Few",
+   "B": "Yes, using vanilla fine-tuning only",
+   "C": "No — fine-tuning is not supported for embedding models",
+   "D": "Only multilingual embedding models support fine-tuning"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 93,
+  "section": "OCI GenAI Service — Parameters, Fine-Tuning",
+  "question": "In the fine-tuning cost example (\"Bob\"), how many small Cohere dedicated units were required to fine-tune Command R (08-2024)?",
+  "options": {
+   "A": "1",
+   "B": "2",
+   "C": "8",
+   "D": "50"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 94,
+  "section": "OCI GenAI Service — Parameters, Fine-Tuning",
+  "question": "What does an \"accuracy\" of 0.98 mean for a fine-tuned custom model, per the course's definition?",
+  "options": {
+   "A": "98% of the training data was discarded",
+   "B": "98% of the output tokens match the tokens in the training dataset",
+   "C": "The model has 98% fewer parameters than the base model",
+   "D": "98% of GPUs were utilized"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 95,
+  "section": "OCI GenAI Service — Parameters, Fine-Tuning",
+  "question": "Why is \"loss\" generally preferred over \"accuracy\" as a fine-tuning evaluation metric?",
+  "options": {
+   "A": "Loss is easier to calculate mathematically",
+   "B": "Generative AI doesn't always have a single correct answer, so loss captures contextual/semantic closeness better than exact token matching",
+   "C": "Accuracy cannot be computed for language models",
+   "D": "Loss requires no ground truth data"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 96,
+  "section": "OCI GenAI Service — Parameters, Fine-Tuning",
+  "question": "In the fine-tuning example where ground truth was \"the cat sat on the mat\" and the model predicted \"the cat slept on the rug,\" what characterized the loss value?",
+  "options": {
+   "A": "Loss was very high, since accuracy was low",
+   "B": "Loss was relatively low, because the substituted words were contextually/semantically similar",
+   "C": "Loss was exactly zero",
+   "D": "Loss could not be computed in this scenario"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 97,
+  "section": "OCI GenAI Service — Parameters, Fine-Tuning",
+  "question": "What does OCI Generative AI security ensure regarding GPU allocation?",
+  "options": {
+   "A": "GPUs are shared across all customers by default for cost savings",
+   "B": "GPUs allocated for a customer's generative AI tasks are isolated from other customers' GPUs",
+   "C": "GPU isolation is optional and rarely used",
+   "D": "Only fine-tuning workloads get isolated GPUs; inference is always shared"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 98,
+  "section": "OCI GenAI Service — Parameters, Fine-Tuning",
+  "question": "Which OCI service is used for authentication and authorization in the Generative AI security architecture?",
+  "options": {
+   "A": "OCI Vault only",
+   "B": "OCI Identity and Access Management (IAM)",
+   "C": "OCI Object Storage",
+   "D": "OCI Data Science"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 99,
+  "section": "OCI GenAI Service — Parameters, Fine-Tuning",
+  "question": "Where are fine-tuned model weights stored, and how are they protected, per the security architecture lesson?",
+  "options": {
+   "A": "Stored in plaintext in a public bucket",
+   "B": "Stored in OCI Object Storage, encrypted by default, with keys managed by the Key Management service",
+   "C": "Stored only in local Jupyter Notebooks",
+   "D": "Not stored anywhere; regenerated on each request"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 100,
+  "section": "OCI GenAI Service — Parameters, Fine-Tuning",
+  "question": "Can one customer's application access another customer's custom models hosted in a different tenancy's dedicated AI cluster?",
+  "options": {
+   "A": "Yes, by default",
+   "B": "No — customer data/model access is isolated within each customer's own tenancy",
+   "C": "Only if both customers use the same base model",
+   "D": "Only during fine-tuning, not inference"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 101,
+  "section": "Prompt Engineering & Customizing LLMs",
+  "question": "What is prompt engineering, as defined in the course?",
+  "options": {
+   "A": "Changing a model's architecture",
+   "B": "The process of iteratively refining a prompt to elicit a particular style/type of response",
+   "C": "A synonym for RLHF",
+   "D": "Editing the model's tokenizer"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 102,
+  "section": "Prompt Engineering & Customizing LLMs",
+  "question": "Why can't you simply give instructions to a pure completion (non-instruction-tuned) LLM?",
+  "options": {
+   "A": "Completion LLMs are trained only to predict the next word, not to safely perform user-requested tasks directly",
+   "B": "Completion LLMs have no vocabulary",
+   "C": "Completion LLMs cannot process any text input",
+   "D": "Instructions are technically impossible for any LLM"
+  },
+  "answer": "A"
+ },
+ {
+  "id": 103,
+  "section": "Prompt Engineering & Customizing LLMs",
+  "question": "What data scale was Llama 2's base model trained on, per the course?",
+  "options": {
+   "A": "2 million tokens",
+   "B": "2 billion tokens",
+   "C": "2 trillion tokens",
+   "D": "2 quadrillion tokens"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 104,
+  "section": "Prompt Engineering & Customizing LLMs",
+  "question": "How many prompt-response pairs were used to additionally fine-tune Llama 2 Chat, per the course?",
+  "options": {
+   "A": "~280",
+   "B": "~2,800",
+   "C": "~28,000",
+   "D": "~2,800,000"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 105,
+  "section": "Prompt Engineering & Customizing LLMs",
+  "question": "What is RLHF used for?",
+  "options": {
+   "A": "Reducing token counts in a prompt",
+   "B": "Aligning model behavior with human preferences using a reward model trained on human feedback",
+   "C": "Converting encoder models into decoder models",
+   "D": "Automatically generating embeddings"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 106,
+  "section": "Prompt Engineering & Customizing LLMs",
+  "question": "Why does prompt format matter so much for models like Llama 2?",
+  "options": {
+   "A": "Format has zero effect on output quality",
+   "B": "Llama 2 is trained on a specific prompt format (with instruction tags); deviating can yield suboptimal results",
+   "C": "Format only matters for embedding models",
+   "D": "Any format works identically well"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 107,
+  "section": "Prompt Engineering & Customizing LLMs",
+  "question": "What is \"zero-shot chain-of-thought\" prompting?",
+  "options": {
+   "A": "Providing multiple worked examples before the question",
+   "B": "Simply adding a phrase like \"Let's think step by step\" without providing any example",
+   "C": "Using zero temperature exclusively",
+   "D": "A method requiring fine-tuning"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 108,
+  "section": "Prompt Engineering & Customizing LLMs",
+  "question": "Why is it NOT recommended to train an LLM from scratch with your own company data?",
+  "options": {
+   "A": "It's inexpensive and requires little data or expertise",
+   "B": "It's very expensive (~$1M+ for a 10B param model), requires massive/annotated data, and deep expertise",
+   "C": "It's technically impossible",
+   "D": "It always performs worse than prompting"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 109,
+  "section": "Prompt Engineering & Customizing LLMs",
+  "question": "What is the main limitation of few-shot prompting as an LLM customization technique?",
+  "options": {
+   "A": "It cannot be combined with chain-of-thought prompting",
+   "B": "The model's context window length limits how much can be included",
+   "C": "It requires GPUs to compute",
+   "D": "It always requires a labeled dataset"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 110,
+  "section": "Prompt Engineering & Customizing LLMs",
+  "question": "When is fine-tuning most appropriate as an LLM customization technique?",
+  "options": {
+   "A": "When the LLM already performs the task well",
+   "B": "When the pretrained model doesn't perform well on the task, or you want to teach it something new (style, tone, domain)",
+   "C": "When you want to avoid using any data at all",
+   "D": "When latency doesn't matter"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 111,
+  "section": "Prompt Engineering & Customizing LLMs",
+  "question": "Why does RAG NOT require fine-tuning?",
+  "options": {
+   "A": "It changes the model architecture directly",
+   "B": "It retrieves relevant info at inference time and augments the prompt, without altering model weights",
+   "C": "RAG uses reinforcement learning instead of retrieval",
+   "D": "RAG only works with fine-tuned models"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 112,
+  "section": "Prompt Engineering & Customizing LLMs",
+  "question": "In the two-dimensional LLM customization framework, what does the horizontal axis represent?",
+  "options": {
+   "A": "LLM optimization (how the model needs to act)",
+   "B": "Context optimization (what the model needs to know)",
+   "C": "Training cost",
+   "D": "Token count"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 113,
+  "section": "Prompt Engineering & Customizing LLMs",
+  "question": "In that same framework, what does the vertical axis represent?",
+  "options": {
+   "A": "Context optimization",
+   "B": "LLM optimization (what method the model needs to act on)",
+   "C": "Dataset size",
+   "D": "Latency"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 114,
+  "section": "Prompt Engineering & Customizing LLMs",
+  "question": "What is typically the recommended starting point in an LLM optimization journey?",
+  "options": {
+   "A": "Full fine-tuning",
+   "B": "RAG implementation",
+   "C": "Prompt engineering (with an evaluation framework/baseline)",
+   "D": "Continual pretraining"
+  },
+  "answer": "C"
+ },
+ {
+  "id": 115,
+  "section": "Prompt Engineering & Customizing LLMs",
+  "question": "According to the course, is it common to use prompting, RAG, AND fine-tuning together on the same application?",
+  "options": {
+   "A": "No — you must choose exactly one technique",
+   "B": "Yes — these techniques are often additive and used together depending on where you are in the optimization journey",
+   "C": "Only fine-tuning and RAG can be combined; prompting cannot",
+   "D": "Combining techniques always degrades performance"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 116,
+  "section": "LangChain, RAG Pipeline & Oracle Database",
+  "question": "What is LangChain, as described in the course?",
+  "options": {
+   "A": "An OCI-exclusive proprietary embedding model",
+   "B": "A framework for developing context-aware applications powered by language models",
+   "C": "A vector database engine only",
+   "D": "A GPU scheduling system"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 117,
+  "section": "LangChain, RAG Pipeline & Oracle Database",
+  "question": "What are the two main model types LangChain integrates with?",
+  "options": {
+   "A": "Vision models and Speech models",
+   "B": "LLMs (pure text completion) and Chat models (conversation-tuned)",
+   "C": "Supervised and Unsupervised models",
+   "D": "Encoders and GANs"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 118,
+  "section": "LangChain, RAG Pipeline & Oracle Database",
+  "question": "What is the difference between LangChain's PromptTemplate and ChatPromptTemplate?",
+  "options": {
+   "A": "They are functionally identical",
+   "B": "PromptTemplate is a formatted string with placeholders; ChatPromptTemplate is composed of a list of role-based chat messages",
+   "C": "ChatPromptTemplate cannot include any variables",
+   "D": "PromptTemplate only works with embedding models"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 119,
+  "section": "LangChain, RAG Pipeline & Oracle Database",
+  "question": "What is LCEL in LangChain?",
+  "options": {
+   "A": "A deprecated legacy chaining method",
+   "B": "LangChain Expression Language — the declarative, preferred way to compose chains",
+   "C": "A vector indexing algorithm",
+   "D": "A type of embedding model"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 120,
+  "section": "LangChain, RAG Pipeline & Oracle Database",
+  "question": "In LangChain, what is the role of \"memory\" in a conversation chain?",
+  "options": {
+   "A": "It permanently changes the LLM's weights",
+   "B": "It stores conversation history and passes relevant context (or a summary/extracted entities) back to the LLM on each turn",
+   "C": "It has no functional role — it's just a UI feature",
+   "D": "It replaces the need for a prompt entirely"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 121,
+  "section": "LangChain, RAG Pipeline & Oracle Database",
+  "question": "In the RAG ingestion phase, what is a \"chunk\"?",
+  "options": {
+   "A": "A single trained model parameter",
+   "B": "A smaller, manageable piece of a larger document, created to fit within context windows and stay semantically useful",
+   "C": "A synonym for an embedding vector",
+   "D": "The final generated answer"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 122,
+  "section": "LangChain, RAG Pipeline & Oracle Database",
+  "question": "Why is \"chunk overlap\" used when splitting documents?",
+  "options": {
+   "A": "To intentionally duplicate the entire document",
+   "B": "To maintain context continuity between adjacent chunks by including part of the preceding chunk in the next",
+   "C": "To reduce the total number of chunks to zero",
+   "D": "To increase hallucination"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 123,
+  "section": "LangChain, RAG Pipeline & Oracle Database",
+  "question": "What trade-off exists when choosing chunk size?",
+  "options": {
+   "A": "There is no trade-off; bigger is always better",
+   "B": "Smaller chunks may lose semantic usefulness; larger chunks may lose semantic specificity and may not fit the model's context window",
+   "C": "Chunk size never affects the LLM's context window",
+   "D": "Chunk size only matters for embedding models, not generation"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 124,
+  "section": "LangChain, RAG Pipeline & Oracle Database",
+  "question": "How do text splitters try to preserve semantic meaning while chunking?",
+  "options": {
+   "A": "By splitting at completely random character positions",
+   "B": "By using a hierarchy of separators (paragraph, then sentence, then word) to keep semantically meaningful units together",
+   "C": "By removing all punctuation before splitting",
+   "D": "By ignoring sentence boundaries entirely"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 125,
+  "section": "LangChain, RAG Pipeline & Oracle Database",
+  "question": "What SQL data type did Oracle Database 23ai introduce specifically for storing embeddings?",
+  "options": {
+   "A": "BLOB",
+   "B": "VECTOR",
+   "C": "JSON",
+   "D": "CLOB"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 126,
+  "section": "LangChain, RAG Pipeline & Oracle Database",
+  "question": "How can embeddings be generated for data stored in Oracle Database 23ai?",
+  "options": {
+   "A": "Only through a third-party API with no in-database option",
+   "B": "Either outside the database (third-party models) or inside the database (by importing ONNX-format embedding models)",
+   "C": "Oracle 23ai does not support embedding generation",
+   "D": "Only through manual SQL calculation with no model involved"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 127,
+  "section": "LangChain, RAG Pipeline & Oracle Database",
+  "question": "In the RAG pipeline's Retrieval phase, what does \"top K\" refer to?",
+  "options": {
+   "A": "The total number of documents in the corpus",
+   "B": "A preset number of the most relevant retrieved chunks selected to pass to the LLM",
+   "C": "The number of GPUs used for retrieval",
+   "D": "The number of chunks discarded"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 128,
+  "section": "LangChain, RAG Pipeline & Oracle Database",
+  "question": "What class/method is used in the demos to build an Oracle vector store from a list of Document objects?",
+  "options": {
+   "A": "OracleVS class with from_documents method",
+   "B": "PdfReader with split_text method",
+   "C": "ConversationBufferMemory",
+   "D": "ChatOCIGenAI class alone"
+  },
+  "answer": "A"
+ },
+ {
+  "id": 129,
+  "section": "LangChain, RAG Pipeline & Oracle Database",
+  "question": "What parameter is used to specify how similarity between two vectors is calculated when building an Oracle vector store?",
+  "options": {
+   "A": "chunk_overlap",
+   "B": "distance_strategy",
+   "C": "max_tokens",
+   "D": "preamble"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 130,
+  "section": "LangChain, RAG Pipeline & Oracle Database",
+  "question": "In the conversational RAG discussion, why is memory especially important for multi-turn chat?",
+  "options": {
+   "A": "It has no importance in chat scenarios",
+   "B": "Prior questions/answers can act as implicit context for follow-up questions (e.g., \"its temperature\" referring back to a previously mentioned city)",
+   "C": "Memory replaces the need for retrieval entirely",
+   "D": "Memory is only used for embedding generation"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 131,
+  "section": "OCI Generative AI Agents Service",
+  "question": "What is the OCI Generative AI Agents service, at a high level?",
+  "options": {
+   "A": "A standalone embedding-only API",
+   "B": "A fully managed service combining LLMs with an intelligent retrieval system to answer queries by searching a knowledge base",
+   "C": "A GPU provisioning tool only",
+   "D": "A replacement for OCI IAM"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 132,
+  "section": "OCI Generative AI Agents Service",
+  "question": "What are the four key operations the LLM performs within the agent architecture?",
+  "options": {
+   "A": "Encoding, decoding, pooling, softmax",
+   "B": "Reasoning, Acting, Persona, Planning",
+   "C": "Chunking, embedding, indexing, retrieving",
+   "D": "Training, testing, validating, deploying"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 133,
+  "section": "OCI Generative AI Agents Service",
+  "question": "What is the correct data access hierarchy for an OCI Generative AI Agent?",
+  "options": {
+   "A": "Knowledge Base → Data Source → Data Store",
+   "B": "Data Store → Data Source → Knowledge Base",
+   "C": "Data Source → Knowledge Base → Data Store",
+   "D": "Agent → Endpoint → Data Store"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 134,
+  "section": "OCI Generative AI Agents Service",
+  "question": "Which of these is NOT one of the three supported data options for Generative AI Agents?",
+  "options": {
+   "A": "Object Storage data",
+   "B": "OpenSearch data",
+   "C": "Oracle Database vector store",
+   "D": "Local CSV file upload via chat"
+  },
+  "answer": "D"
+ },
+ {
+  "id": 135,
+  "section": "OCI Generative AI Agents Service",
+  "question": "In RAG agent quality, what does \"groundedness\" refer to?",
+  "options": {
+   "A": "How fast the response is generated",
+   "B": "Whether the model's response can be traced back to/supported by actual data sources",
+   "C": "The number of parameters in the model",
+   "D": "The physical location of the data center"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 136,
+  "section": "OCI Generative AI Agents Service",
+  "question": "What file formats are supported for Object Storage-based knowledge base data sources?",
+  "options": {
+   "A": "Only CSV",
+   "B": "PDF and text files only",
+   "C": "Any file format, with no restriction",
+   "D": "Only DOCX and PPTX"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 137,
+  "section": "OCI Generative AI Agents Service",
+  "question": "What is the maximum file size allowed per file for an Object Storage data source?",
+  "options": {
+   "A": "10 MB",
+   "B": "100 MB",
+   "C": "1 GB",
+   "D": "No limit"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 138,
+  "section": "OCI Generative AI Agents Service",
+  "question": "What must match between the database function's query embedding and the stored document embeddings, per the Oracle Database guidelines for agents?",
+  "options": {
+   "A": "Nothing needs to match",
+   "B": "The embedding model used for the function's query must match the embedding model used to generate the stored vector column",
+   "C": "Only the file format needs to match",
+   "D": "Only the table name needs to match"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 139,
+  "section": "OCI Generative AI Agents Service",
+  "question": "What does the \"trace\" feature do in an Agent endpoint?",
+  "options": {
+   "A": "Deletes the chat history automatically",
+   "B": "Tracks and displays the history of a chat conversation, including prompts and responses",
+   "C": "Encrypts the vector database",
+   "D": "Blocks harmful content from being generated"
+  },
+  "answer": "B"
+ },
+ {
+  "id": 140,
+  "section": "OCI Generative AI Agents Service",
+  "question": "What does \"citation\" provide in an agent's response?",
+  "options": {
+   "A": "A random confidence score with no source information",
+   "B": "Details about the source of information used (title, path, document ID, page numbers) so users can trace answers back to origin",
+   "C": "A list of all users who accessed the agent",
+   "D": "The GPU utilization for that particular query"
+  },
+  "answer": "B"
+ }
+]

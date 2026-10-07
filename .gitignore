@@ -1,0 +1,25 @@
+# Secrets - NEVER commit these
+.env
+*.pem
+*.key
+oci_config
+.oci/
+wallet/
+*.sso
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Generated outputs you may not want to track (the Lab 03 figure is committed on purpose)
+part2-genai-professional/outputs/
+part2-genai-professional/m2_oci_genai_service/data/*_generated.jsonl

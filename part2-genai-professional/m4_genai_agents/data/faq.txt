@@ -1,0 +1,13 @@
+Sample FAQ for the GenAI Agents demos (replace with your own content; the course used an OCI FAQ file).
+
+Q: What is the OCI Free Tier?
+A: The Oracle Cloud Free Tier lets you try Oracle Cloud Infrastructure with a trial credit period and a set of Always Free services. Check the official Oracle page for the current limits.
+
+Q: What is a knowledge base in OCI Generative AI Agents?
+A: A knowledge base is the vector storage that ingests data from a data source and organizes it so the agent can retrieve relevant content efficiently.
+
+Q: Which file types does an Object Storage data source support?
+A: PDF and text files. Each file can be up to 100 MB.
+
+Q: Why use citations?
+A: Citations show the source of each answer (title, path, document id), which supports groundedness and trust.

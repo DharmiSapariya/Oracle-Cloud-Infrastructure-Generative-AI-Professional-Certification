@@ -1,0 +1,10 @@
+-r requirements.txt
+# Cloud labs: OCI Generative AI, LangChain RAG, Oracle Database 23ai
+oci>=2.130
+oracledb>=2.0
+pypdf>=4.0
+python-dotenv>=1.0
+# Pinned to the 0.3 line because ConversationChain / ConversationBufferMemory (used in the course demo)
+# were removed from the main `langchain` package in 1.0.
+langchain>=0.3,<0.4
+langchain-community>=0.3,<0.4
